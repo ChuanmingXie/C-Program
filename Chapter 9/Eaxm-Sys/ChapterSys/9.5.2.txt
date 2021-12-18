@@ -1,0 +1,12 @@
+/*对共用体成员成员变量的引用*/
+
+union test
+{
+	int num;
+	char name[8];
+	float score;
+}a;
+
+scanf("%d",&a.score);
+scanf("%s",a.name);
+printf("%d%s%f",a.num,a.name,a.score);

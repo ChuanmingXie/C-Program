@@ -1,0 +1,44 @@
+定义共用体类型变量的一般形式:
+
+	union 共用体名{
+		
+		成员列表
+
+	}变量列表名;
+
+		/*方法一*/
+		union Data{
+			int i;
+			char ch;
+			float f;
+		}a,b,c;
+
+		/*方法二*/
+		union Data{
+			int I;
+			char ch;
+			float f;
+		};
+		
+		union Data a,b,c;
+
+		/*方法三*/
+		union{
+			int i;
+			char ch;
+			float f;
+		}a,b,c;
+
+/*测试如下的两种声明内存占用情况*/
+	/*结构体*/
+	struct Test1{
+		int Num;
+		char Name[8];
+		float Score;
+	}A;
+	/*共用体*/
+	union Test2{
+		int Num;
+		char Name[8];
+		float Score;
+	}B;

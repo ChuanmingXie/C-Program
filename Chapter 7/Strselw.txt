@@ -1,0 +1,25 @@
+	int m=1,max=0,maxb=0;
+	char **a,*ps=s;
+	for(;*(ps+1)!='\0';ps++)
+	{
+		if(!((*ps>='a'&&*ps<='z')||(*ps>='A'&&*ps<='Z')))
+			m++;
+	}
+	a=(char**)malloc(sizeof(char*)*m);
+	for(i=0;i<m;++i)
+		a[i]=(char*)malloc(sizeof(char)*10);
+
+	for(j=0;j<m&&*s!='\0';++j,++s)
+	{
+		for(i=0;(*s>='a'&&*s<='z')||(*s>='A'&&*s<='Z');++s,++i)
+			a[j][i]=*s;
+		a[j][i]='\0';
+	}
+
+	max=strlen(a[0]);
+	for(i=0;i<m;++i)
+	{
+		if(max<(int)strlen(a[i]))
+		{max=strlen(a[i]);maxb=i;}
+	}
+	printf("\n最长的单词:%s\n",a[maxb]);

@@ -1,5 +1,23 @@
 # Prerequisites
 *.d
+*.dsp
+*.dsw
+*.ncb
+*.opt
+*.plg
+*.VC.db
+*.VC.opendb
+*.ipch
+*.suo
+*.sdf
+*.vcxproj
+*.sln
+*.lastbuildstate
+*.din
+*.sbr
+*.bsc
+*.filters
+*.tlog
 
 # Object files
 *.o
@@ -41,6 +59,8 @@
 *.su
 *.idb
 *.pdb
+*.obj
+*.pch
 
 # Kernel Module Compile Results
 *.mod*

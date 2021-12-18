@@ -1,0 +1,36 @@
+/*9.1.2 定义结构体变量*/
+
+/*定义方法 1*/
+
+	struct Student student1,student2;
+
+/*定义方法 2*/
+
+	struct Student
+	{
+		int num;
+		char name[20];
+		char sex;
+		int age;
+		char addr[30];
+		struct Data birthday;
+		float score;
+	}student1,student2;
+
+	/*定义格式*/
+
+		struct 结构体名
+		{
+			成员列表
+
+		}变量名列表;
+
+/*定义方法 3*/
+
+	/*定义格式*/
+
+		struct
+		{
+			成员列表
+
+		}变量名列表;

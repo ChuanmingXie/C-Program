@@ -1,0 +1,5 @@
+struct Student{
+	int num;
+	float score;
+	struct Student *next;
+};

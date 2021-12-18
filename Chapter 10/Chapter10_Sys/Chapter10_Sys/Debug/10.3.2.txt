@@ -1,0 +1,13 @@
+/*Ò»ÖÖÎÄ¼şÀàĞÍÖ¸Õë*/
+
+typedef struct{
+	short level;		//»º³åÇø¡°Âú¡±»ò¡°¿Õ¡±µÄË®Æ½
+	unsigned flags;		//ÎÄ¼ş×´Ì¬±êÖ¾
+	char fd;		//ÎÄ¼şÃèÊö·û
+	unsigned char hold;	//Èç»º³åÇøÎŞÄÚÈİ²»¶ÁÈ¡×Ö·û
+	short bsize£»		//»º³åÇø´óĞ¡
+	unsigned char * buffer;	//Êı¾İ»º³åÇøµÄÎ»ÖÃ
+	unsigned char * curp;	//Ö¸Õëµ±Ç°µÄÖ¸Ïò
+	unsigned char istemp;	//ÁÙÊ±ÎÄ¼şÖ¸Ê¾Æ÷
+	short token;		//ÓÃÓÚÓĞĞ§ĞÔ¼ì²é
+}FILE;ÿ

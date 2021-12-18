@@ -1,0 +1,14 @@
+﻿生成启动时间为 2018/6/12 19:42:18。
+     1>项目“E:\WorkSpace\C    Program\Chapter 8\PointerVar\DiffcultPointer\DiffcultPointer\DiffcultPointer.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DiffcultPointer.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DiffcultPointer.cpp function.cpp
+         function.cpp
+     1>e:\workspace\c    program\chapter 8\pointervar\diffcultpointer\diffcultpointer\function.cpp(20): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+         DiffcultPointer.cpp
+         正在生成代码...
+     1>已完成生成项目“E:\WorkSpace\C    Program\Chapter 8\PointerVar\DiffcultPointer\DiffcultPointer\DiffcultPointer.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.63

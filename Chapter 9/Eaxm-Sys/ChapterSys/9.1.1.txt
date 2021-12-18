@@ -1,0 +1,39 @@
+/*9.1.1 自己声明建立结构体类型*/
+
+/*Dome 1*/
+
+	struct Student{
+		int num;		//学号为整型
+		char name[20];		//姓名为字符串
+		char sex;		//性别为字符
+		int age;		//年龄为整型
+		float score;		//成绩为实型
+		char addr[30];		//地址为字符串
+	};
+
+	/*声明格式*/
+
+		struct 结构体名
+		{
+			/*成员列表*/
+
+			类型名 成员名;
+
+		};
+
+/*Dome 2*/
+
+	struct Data
+	{
+		int month;
+		int day;
+		int year;
+	};
+
+	struct Student
+	{
+		int num;
+		int sex;
+		struct Data birthday;
+		char addr[30];
+	};
