@@ -21,7 +21,7 @@ int main()
 int main(void)
 {
 	int i,j,k,p;
-    //printf("ÇëÊäÈëÒ»¸öÊı£¬ÀıÈç¡®6¡¯£¬È»ºóÇÃ»Ø³µ£º");
+    //printf("è¯·è¾“å…¥ä¸€ä¸ªæ•°ï¼Œä¾‹å¦‚â€˜6â€™ï¼Œç„¶åæ•²å›è½¦ï¼š");
     scanf("%d",&i);
 	for(k=1;k<=i;k++)
 	{
@@ -29,16 +29,16 @@ int main(void)
 		{
 			printf("%4d",j);            
 		}
-        if(k>1)
+		if(k>1)
+		{
+			for(p=k-1;p>0;p--)
 			{
-				for(p=k-1;p>0;p--)
-				{
-					printf("%4d",k-p);        
-				}
+				printf("%4d",k-p);        
 			}
-	printf("\n");   
-    }
+		}
+		printf("\n");   
+	    }
 	//sleep(10000);
-    //getchar();
+	//getchar();
 	return 0;
 }
