@@ -6,6 +6,8 @@
 *.opt
 *.plg
 *.VC.db
+*.VC.db-shm
+*.VC.db-wal
 *.VC.opendb
 *.ipch
 *.suo
