@@ -1,4 +1,4 @@
-//函数法实现水仙花数
+//姹傝В姘翠粰鑺辨暟
 
 #include<stdio.h>
 int main()
@@ -22,5 +22,4 @@ int WaterNum(int x)
 
 	if(a*a*a+b*b*b+c*c*c==x) return 1;
 	else return 0;
-
 }
