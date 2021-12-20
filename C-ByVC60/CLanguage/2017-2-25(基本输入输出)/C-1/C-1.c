@@ -1,14 +1,15 @@
+//è¿ç®—ç¬¦ä¸åŸºæœ¬è¾“å…¥è¾“å‡º
 #include<stdio.h>
 int main()
 {
 	float a,b,c=0;
 	float sum,plant,ave;
-	printf("ÇëÊäÈëÈı¸ö²âÊÔÊı¾İ\n");
+	printf("è¯·è¾“å…¥ä¸‰ä¸ªæµ‹è¯•æ•°æ®\n");
 	scanf("%f,%f,%f",&a,&b,&c);
 	sum=a+b+c;
 	plant=a*b*c;
 	ave=sum/3;
-	printf("Èı¸öÊıµÄºÍÎª£º%f\n",sum);
-	printf("Èı¸öÊıµÄ»ıÎª£º%f\n",plant);
-	printf("Èı¸öÊıµÄÆ½¾ùÖµÎª£º%f\n",ave);
+	printf("ä¸‰ä¸ªæ•°çš„å’Œä¸ºï¼š%f\n",sum);
+	printf("ä¸‰ä¸ªæ•°çš„ç§¯ä¸ºï¼š%f\n",plant);
+	printf("ä¸‰ä¸ªæ•°çš„å¹³å‡å€¼ä¸ºï¼š%f\n",ave);
 }
