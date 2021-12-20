@@ -22,4 +22,4 @@
 		if(max<(int)strlen(a[i]))
 		{max=strlen(a[i]);maxb=i;}
 	}
-	printf("\n×î³¤µÄµ¥´Ê:%s\n",a[maxb]);
+	printf("\næœ€å¤§å€¼ä¸ºï¼š%s\n",a[maxb]);
