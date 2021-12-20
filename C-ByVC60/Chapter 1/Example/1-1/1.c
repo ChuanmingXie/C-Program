@@ -1,10 +1,7 @@
-//Êä³ö
+//åŸºæœ¬è¾“å‡º
 #include<stdio.h>
 int main()
 {
 	printf("This is C Program.\n");
 	return 0;
 }
-
-
-
