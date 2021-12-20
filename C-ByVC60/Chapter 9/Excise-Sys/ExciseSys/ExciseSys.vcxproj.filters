@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3109fea1-2588-448f-ad0c-92c6a5769ee5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5c16a746-1f79-42d4-8910-728c5e97f87f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{78de6b4d-e3b0-4616-86e8-b3bbaca9244a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FunMain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FunNtion.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FunPublic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FunScript.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

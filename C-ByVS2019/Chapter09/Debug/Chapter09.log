@@ -1,0 +1,6 @@
+﻿  Function.c
+  FunMain.c
+  FunScript.c
+D:\05-CodePractice\CProgram\C-Program\C-ByVS2019\Chapter09\FunScript.c(8,17): warning C4083: 应输入“(”；找到标识符“disable”
+  正在生成代码...
+  Chapter09.vcxproj -> D:\05-CodePractice\CProgram\C-Program\C-ByVS2019\Debug\Chapter09.exe

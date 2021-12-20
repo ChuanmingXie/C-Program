@@ -10,14 +10,12 @@
 *.ipch
 *.suo
 *.sdf
-*.vcxproj
-*.sln
 *.lastbuildstate
 *.din
 *.sbr
 *.bsc
-*.filters
 *.tlog
+*.recipe
 
 # Object files
 *.o
@@ -61,6 +59,8 @@
 *.pdb
 *.obj
 *.pch
+*.Build.CppClean.log
+*.FileListAbsolute.txt
 
 # Kernel Module Compile Results
 *.mod*
