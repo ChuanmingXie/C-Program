@@ -1,4 +1,4 @@
-/*½»»»a£¬bÁ½¸öÊý*/
+/*äº¤æ¢aï¼Œbä¸¤ä¸ªæ•°*/
 
 #include<stdio.h>
 #include<conio.h>
@@ -8,63 +8,63 @@ int main()
 	void swap1(int x,int y);
 	void swap2(int *x,int *y);
 	void swap(int *x,int *y);
-	printf("ÇëÊäÈëÊý¾Ý:\n");
+	printf("è¯·è¾“å…¥æ•°æ®:\n");
 	printf("a=");	scanf("%d",&a);
 	printf("b=");	scanf("%d",&b);
 
-	printf("\n1.µ¥ÏòÖµ´«µÝ½»»»:\nµ÷ÓÃº¯Êý½»»»Ç°:%d\t%d\n",a,b);
+	printf("\n1.å•å‘å€¼ä¼ é€’äº¤æ¢:\nè°ƒç”¨å‡½æ•°äº¤æ¢å‰:%d\t%d\n",a,b);
 	swap1(a,b);
-	printf("µ÷ÓÃº¯Êý½»»»ºó:%d\t%d\n",a,b);			//Êä³öµÄÊÇÖµ
+	printf("è°ƒç”¨å‡½æ•°äº¤æ¢åŽ:%d\t%d\n",a,b);			//è¾“å‡ºçš„æ˜¯å€¼
 	printf("a=%d\nb=%d\n",a,b);
-	printf("µ¥Ïò´«µÝÖµ£¬²»±ä\n\n");
+	printf("å•å‘ä¼ é€’å€¼ï¼Œä¸å˜\n\n");
 	
-	printf("2.µ¥ÏòµØÖ·´«µÝ½»»»\nµ÷ÓÃº¯Êý½»»»Ç°:%d\t%d\n",&a,&b);
-	swap2(&a,&b);									//´«µÝµÄÊµ¼Ê²ÎÊýÊÇµØÖ·
-	printf("µ÷ÓÃº¯Êý½»»»ºó:%d\t%d\n",&a,&b);		//Êä³öµÄÊÇµØÖ·
+	printf("2.å•å‘åœ°å€ä¼ é€’äº¤æ¢\nè°ƒç”¨å‡½æ•°äº¤æ¢å‰:%d\t%d\n",&a,&b);
+	swap2(&a,&b);									//ä¼ é€’çš„å®žé™…å‚æ•°æ˜¯åœ°å€
+	printf("è°ƒç”¨å‡½æ•°äº¤æ¢åŽ:%d\t%d\n",&a,&b);		//è¾“å‡ºçš„æ˜¯åœ°å€
 	printf("a=%d\nb=%d\n",a,b);
-	printf("µ¥Ïò´«µÝµØÖ·£¬²»±ä\n\n");
+	printf("å•å‘ä¼ é€’åœ°å€ï¼Œä¸å˜\n\n");
 
-	printf("3.½»»»µØÖ·ÖÐËù´æÖµ\nµ÷ÓÃº¯Êý½»»»Ç°:%d\t%d\n",&a,&b);
-	swap(&a,&b);									//´«µÝµÄÊµ¼Ê²ÎÊýÊÇµØÖ·
-	printf("µ÷ÓÃº¯Êý½»»»ºó:%d\t%d\n",&a,&b);		//Êä³öµÄÊÇµØÖ·
+	printf("3.äº¤æ¢åœ°å€ä¸­æ‰€å­˜å€¼\nè°ƒç”¨å‡½æ•°äº¤æ¢å‰:%d\t%d\n",&a,&b);
+	swap(&a,&b);									//ä¼ é€’çš„å®žé™…å‚æ•°æ˜¯åœ°å€
+	printf("è°ƒç”¨å‡½æ•°äº¤æ¢åŽ:%d\t%d\n",&a,&b);		//è¾“å‡ºçš„æ˜¯åœ°å€
 	printf("a=%d\nb=%d\n",a,b);
-	printf("½»»»µØÖ·ÄÚËù´æÖµ£¬Öµ½»»»£¬µØÖ·²»±ä\n\n");
+	printf("äº¤æ¢åœ°å€å†…æ‰€å­˜å€¼ï¼Œå€¼äº¤æ¢ï¼Œåœ°å€ä¸å˜\n\n");
 	getch();
 	return 0;
 }
 
 
-void swap1(int x,int y)		//Öµ½»»»·¨£¬ÎÞÐ§
+void swap1(int x,int y)		//å€¼äº¤æ¢æ³•ï¼Œæ— æ•ˆ
 {
-	int t=0;		/*Öµ½»»»±¾ÖÊÉÏÊÇÒ»ÑùµÄ,Èç3ºÍ4;ÔÚº¯ÊýÌåÄÚµÄ½»»»½á¹ûÎÞ·¨»Ø´«
-					ÖÁÖ÷º¯Êý£¬µ¼ÖÂ½»»»Êµ¼ÊÊÇ²»ÄÜÍê³ÉµÄ*/
+	int t=0;		/*å€¼äº¤æ¢æœ¬è´¨ä¸Šæ˜¯ä¸€æ ·çš„,å¦‚3å’Œ4;åœ¨å‡½æ•°ä½“å†…çš„äº¤æ¢ç»“æžœæ— æ³•å›žä¼ 
+					è‡³ä¸»å‡½æ•°ï¼Œå¯¼è‡´äº¤æ¢å®žé™…æ˜¯ä¸èƒ½å®Œæˆçš„*/
 
-	printf("º¯ÊýÌåÄÚ½»»»Ç°:%d\t%d\n",x,y);		//Êä³öµÄÊÇÖµ
+	printf("å‡½æ•°ä½“å†…äº¤æ¢å‰:%d\t%d\n",x,y);		//è¾“å‡ºçš„æ˜¯å€¼
 	t=x;	x=y;	y=t;
-	printf("º¯ÊýÌåÄÚ½»»»ºó:%d\t%d\n",x,y);		//Êä³öµÄÊÇÖµ
+	printf("å‡½æ•°ä½“å†…äº¤æ¢åŽ:%d\t%d\n",x,y);		//è¾“å‡ºçš„æ˜¯å€¼
 
 }
 
-void swap2(int *x,int *y)	//µØÖ·½»»»·¨£¬ÎÞÐ§
+void swap2(int *x,int *y)	//åœ°å€äº¤æ¢æ³•ï¼Œæ— æ•ˆ
 {
-	int *t=NULL;	/*µØÖ·½»»»Èç1299684ºÍ1299868;ÔÚº¯ÊýÌåÄÚµÄ½»»»½á¹ûÎÞ·¨»Ø´«
-					ÖÁÖ÷º¯Êý£¬µ¼ÖÂ½»»»Êµ¼ÊÊÇ²»ÄÜÍê³ÉµÄ*/
+	int *t=NULL;	/*åœ°å€äº¤æ¢å¦‚1299684å’Œ1299868;åœ¨å‡½æ•°ä½“å†…çš„äº¤æ¢ç»“æžœæ— æ³•å›žä¼ 
+					è‡³ä¸»å‡½æ•°ï¼Œå¯¼è‡´äº¤æ¢å®žé™…æ˜¯ä¸èƒ½å®Œæˆçš„*/
 
-	printf("º¯ÊýÌåÄÚ½»»»Ç°:%d\t%d\n",x,y);		//Êä³öµÄÊÇÖµ
+	printf("å‡½æ•°ä½“å†…äº¤æ¢å‰:%d\t%d\n",x,y);		//è¾“å‡ºçš„æ˜¯å€¼
 	t=x;	x=y;	y=t;
-	printf("º¯ÊýÌåÄÚ½»»»ºó:%d\t%d\n",x,y);		//Êä³öµÄÊÇÖµ
+	printf("å‡½æ•°ä½“å†…äº¤æ¢åŽ:%d\t%d\n",x,y);		//è¾“å‡ºçš„æ˜¯å€¼
 
 }
 
-void swap(int *x,int *y)	//Ö¸Õë(Ä¿±ê±äÁ¿)½»»»·¨£¬ÓÐÐ§
+void swap(int *x,int *y)	//æŒ‡é’ˆ(ç›®æ ‡å˜é‡)äº¤æ¢æ³•ï¼Œæœ‰æ•ˆ
 {
-	int t=0;		/*µØÖ·½»»»ºÍÖµ½»»»±¾ÖÊÉÏÊÇÒ»ÑùµÄ,Èç3ºÍ4;1299684ºÍ1299868;
-					´«µÝ¹ýÀ´½»»»µÄÐ§¹ûÊÇÒ»ÑùµÄ,²ÉÈ¡Ö¸Õë·½Ê½£º½«µØÖ·ÒÔÊµ¼Ê²ÎÊý
-					´«µÝ£¬ÔÚº¯ÊýÌåÖÐ½»»»Ö¸Õë²ÅÄÜÊµÏÖÕæÕýµÄ½»»»*/
+	int t=0;		/*åœ°å€äº¤æ¢å’Œå€¼äº¤æ¢æœ¬è´¨ä¸Šæ˜¯ä¸€æ ·çš„,å¦‚3å’Œ4;1299684å’Œ1299868;
+					ä¼ é€’è¿‡æ¥äº¤æ¢çš„æ•ˆæžœæ˜¯ä¸€æ ·çš„,é‡‡å–æŒ‡é’ˆæ–¹å¼ï¼šå°†åœ°å€ä»¥å®žé™…å‚æ•°
+					ä¼ é€’ï¼Œåœ¨å‡½æ•°ä½“ä¸­äº¤æ¢æŒ‡é’ˆæ‰èƒ½å®žçŽ°çœŸæ­£çš„äº¤æ¢*/
 
-	printf("º¯ÊýÌåÄÚ½»»»Ç°:%d\t%d\n",x,y);			//Êä³öµÄÊÇµØÖ·
-	printf("º¯ÊýÌåÄÚ½»»»Ç°:%d\t%d\n",*x,*y);		//Êä³öµÄÊÇÖµ	
+	printf("å‡½æ•°ä½“å†…äº¤æ¢å‰:%d\t%d\n",x,y);			//è¾“å‡ºçš„æ˜¯åœ°å€
+	printf("å‡½æ•°ä½“å†…äº¤æ¢å‰:%d\t%d\n",*x,*y);		//è¾“å‡ºçš„æ˜¯å€¼	
 	t=*x;	*x=*y;	*y=t;
-	printf("º¯ÊýÌåÄÚ½»»»ºó:%d\t%d\n",*x,*y);		//Êä³öµÄÊÇÖµ
-	printf("º¯ÊýÌåÄÚ½»»»ºó:%d\t%d\n",x,y);			//Êä³öµÄÊÇµØÖ·
+	printf("å‡½æ•°ä½“å†…äº¤æ¢åŽ:%d\t%d\n",*x,*y);		//è¾“å‡ºçš„æ˜¯å€¼
+	printf("å‡½æ•°ä½“å†…äº¤æ¢åŽ:%d\t%d\n",x,y);			//è¾“å‡ºçš„æ˜¯åœ°å€
 }

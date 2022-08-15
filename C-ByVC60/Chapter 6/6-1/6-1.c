@@ -1,51 +1,51 @@
-/*Ò»Î¬Êı×éµÄËã·¨Õ¹Ê¾*/
+/*ä¸€ç»´æ•°ç»„çš„ç®—æ³•å±•ç¤º*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
 #include<math.h>
-#define N 10	   /*¶ÔĞ¡Êı×éµÄ¶¨Òå*/
+#define N 10	   /*å¯¹å°æ•°ç»„çš„å®šä¹‰*/
 
-void PrimeSearch();/* 1.Ò»Î¬Êı×é ËØÊı²éÕÒ*/
-void BinlfSearch();/* 2.Ò»Î¬Êı×é ÕÛ°ë²éÕÒ*/
-void SortAicglhs();/* 3.Ò»Î¬Êı×é ÅÅĞòËã·¨*/
-void InsertSorts();/* 4.Ò»Î¬Êı×é ²åÈëÅÅĞò*/
-void ReverseSort();/* 5.Ò»Î¬Êı×é ÄæĞòËã·¨*/
-void AndianSearh();/* 6.¶şÎ¬Êı×é °°µã²éÕÒ*/
-void LinesMartix();/* 7.¶şÎ¬Êı×é ¶Ô½ÇÏßºÍ*/
-void YanghMartix();/* 8.¶şÎ¬Êı×é Ñî»ÔÈı½Ç*/
-void PrintMartix();/* 9.¶şÎ¬Êı×é Í¼°¸Êä³ö*/
-void MagicMartix();/*10.¶şÎ¬Êı×é Ä§·½¾ØÕó*/
+void PrimeSearch();/* 1.ä¸€ç»´æ•°ç»„ ç´ æ•°æŸ¥æ‰¾*/
+void BinlfSearch();/* 2.ä¸€ç»´æ•°ç»„ æŠ˜åŠæŸ¥æ‰¾*/
+void SortAicglhs();/* 3.ä¸€ç»´æ•°ç»„ æ’åºç®—æ³•*/
+void InsertSorts();/* 4.ä¸€ç»´æ•°ç»„ æ’å…¥æ’åº*/
+void ReverseSort();/* 5.ä¸€ç»´æ•°ç»„ é€†åºç®—æ³•*/
+void AndianSearh();/* 6.äºŒç»´æ•°ç»„ éç‚¹æŸ¥æ‰¾*/
+void LinesMartix();/* 7.äºŒç»´æ•°ç»„ å¯¹è§’çº¿å’Œ*/
+void YanghMartix();/* 8.äºŒç»´æ•°ç»„ æ¨è¾‰ä¸‰è§’*/
+void PrintMartix();/* 9.äºŒç»´æ•°ç»„ å›¾æ¡ˆè¾“å‡º*/
+void MagicMartix();/*10.äºŒç»´æ•°ç»„ é­”æ–¹çŸ©é˜µ*/
 
-void Clrscr();/*Ğ¡Ğ¡µÄÇåÆÁº¯Êı*/
+void Clrscr();/*å°å°çš„æ¸…å±å‡½æ•°*/
 
 int main()
 {
 	int No;
-	printf("---------1.Ò»Î¬Êı×é--ËØÊı²éÕÒ---------\n");
-	printf("---------2.Ò»Î¬Êı×é--ÕÛ°ë²éÕÒ---------\n");
-	printf("---------3.Ò»Î¬Êı×é--ÅÅĞòËã·¨---------\n");
-	printf("---------4.Ò»Î¬Êı×é--²åÈëÅÅĞò---------\n");
-	printf("---------5.Ò»Î¬Êı×é--ÄæĞòËã·¨---------\n");
-	printf("---------6.¶şÎ¬Êı×é--°°µã²éÕÒ---------\n");
-	printf("---------7.¶şÎ¬Êı×é--¶Ô½ÇÏßºÍ---------\n");
-	printf("---------8.¶şÎ¬Êı×é--Ñî»ÔÈı½Ç---------\n");
-	printf("---------9.¶şÎ¬Êı×é--Í¼°¸Êä³ö---------\n");
-	printf("--------10.¶şÎ¬Êı×é--Ä§·½¾ØÕó---------\n");
-	printf("ÇëÊäÈëÒªÕ¹Ê¾Ëã·¨µÄ±àºÅ:No=");scanf("%d",&No);
+	printf("---------1.ä¸€ç»´æ•°ç»„--ç´ æ•°æŸ¥æ‰¾---------\n");
+	printf("---------2.ä¸€ç»´æ•°ç»„--æŠ˜åŠæŸ¥æ‰¾---------\n");
+	printf("---------3.ä¸€ç»´æ•°ç»„--æ’åºç®—æ³•---------\n");
+	printf("---------4.ä¸€ç»´æ•°ç»„--æ’å…¥æ’åº---------\n");
+	printf("---------5.ä¸€ç»´æ•°ç»„--é€†åºç®—æ³•---------\n");
+	printf("---------6.äºŒç»´æ•°ç»„--éç‚¹æŸ¥æ‰¾---------\n");
+	printf("---------7.äºŒç»´æ•°ç»„--å¯¹è§’çº¿å’Œ---------\n");
+	printf("---------8.äºŒç»´æ•°ç»„--æ¨è¾‰ä¸‰è§’---------\n");
+	printf("---------9.äºŒç»´æ•°ç»„--å›¾æ¡ˆè¾“å‡º---------\n");
+	printf("--------10.äºŒç»´æ•°ç»„--é­”æ–¹çŸ©é˜µ---------\n");
+	printf("è¯·è¾“å…¥è¦å±•ç¤ºç®—æ³•çš„ç¼–å·:No=");scanf("%d",&No);
 	while(No>10||No<=0){
-		printf("ÄúµÄÊäÈëÓĞÎó,ÇëÖØĞÂÊäÈë:No=");scanf("%d",&No);
+		printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯,è¯·é‡æ–°è¾“å…¥:No=");scanf("%d",&No);
 	}
 	switch(No){
-	case 1: PrimeSearch();break;	/* 1.Ò»Î¬Êı×é ËØÊı²éÕÒ*/
-	case 2: BinlfSearch();break;	/* 2.Ò»Î¬Êı×é ÕÛ°ë²éÕÒ*/
-	case 3: SortAicglhs();break;	/* 3.Ò»Î¬Êı×é ÅÅĞòËã·¨*/
-	case 4: InsertSorts();break;	/* 4.Ò»Î¬Êı×é ²åÈëÅÅĞò*/
-	case 5: ReverseSort();break;	/* 5.Ò»Î¬Êı×é ÄæĞòËã·¨*/
-	case 6: AndianSearh();break;	/* 6.¶şÎ¬Êı×é °°µã²éÕÒ*/
-	case 7: LinesMartix();break;	/* 7.¶şÎ¬Êı×é ¶Ô½ÇÏßºÍ*/
-	case 8: YanghMartix();break;	/* 8.¶şÎ¬Êı×é Ñî»ÔÈı½Ç*/
-	case 9: PrintMartix();break;	/* 9.¶şÎ¬Êı×é Í¼°¸Êä³ö*/
-	case 10:MagicMartix();break;	/*10.¶şÎ¬Êı×é Ä§·½¾ØÕó*/
+	case 1: PrimeSearch();break;	/* 1.ä¸€ç»´æ•°ç»„ ç´ æ•°æŸ¥æ‰¾*/
+	case 2: BinlfSearch();break;	/* 2.ä¸€ç»´æ•°ç»„ æŠ˜åŠæŸ¥æ‰¾*/
+	case 3: SortAicglhs();break;	/* 3.ä¸€ç»´æ•°ç»„ æ’åºç®—æ³•*/
+	case 4: InsertSorts();break;	/* 4.ä¸€ç»´æ•°ç»„ æ’å…¥æ’åº*/
+	case 5: ReverseSort();break;	/* 5.ä¸€ç»´æ•°ç»„ é€†åºç®—æ³•*/
+	case 6: AndianSearh();break;	/* 6.äºŒç»´æ•°ç»„ éç‚¹æŸ¥æ‰¾*/
+	case 7: LinesMartix();break;	/* 7.äºŒç»´æ•°ç»„ å¯¹è§’çº¿å’Œ*/
+	case 8: YanghMartix();break;	/* 8.äºŒç»´æ•°ç»„ æ¨è¾‰ä¸‰è§’*/
+	case 9: PrintMartix();break;	/* 9.äºŒç»´æ•°ç»„ å›¾æ¡ˆè¾“å‡º*/
+	case 10:MagicMartix();break;	/*10.äºŒç»´æ•°ç»„ é­”æ–¹çŸ©é˜µ*/
 	}
 	getch();
 	return 0;
@@ -57,7 +57,7 @@ void Clrscr()
 		system("CLS");
 }
 
-/* 1.Ò»Î¬Êı×é ËØÊı²éÕÒ*/
+/* 1.ä¸€ç»´æ•°ç»„ ç´ æ•°æŸ¥æ‰¾*/
 void PrimeSearch(){
 	int a[1000],i=0,j=0,p=0;
 	for(i=0;i<1000;++i)
@@ -82,29 +82,29 @@ void PrimeSearch(){
 	main();
 }
 
-/* 2.Ò»Î¬Êı×é ÕÛ°ë²éÕÒ*/
+/* 2.ä¸€ç»´æ•°ç»„ æŠ˜åŠæŸ¥æ‰¾*/
 void BinlfSearch(){
 	int a[N],low=0,high=N-1,flag=1,sign,mid,local,num,i=1;
 	char c;
-	printf("ÇëÊäÈëÊı¾İ:\na[0]=");
+	printf("è¯·è¾“å…¥æ•°æ®:\na[0]=");
 	scanf("%d",&a[0]);
 	while(i<N){
 		printf("a[%d]=",i);
 		scanf("%d",&a[i]);
 		if(a[i]<a[i-1])
-			printf("a[%d]ÓĞÎó,Çë°´ÉıĞòÊäÈëÊı¾İ:\n",i);
+			printf("a[%d]æœ‰è¯¯,è¯·æŒ‰å‡åºè¾“å…¥æ•°æ®:\n",i);
 		else ++i;
 	}
 
-	printf("\nÄúÊäÈëµÄĞòÁĞÎª:\nÎ»ÖÃ:");
+	printf("\næ‚¨è¾“å…¥çš„åºåˆ—ä¸º:\nä½ç½®:");
 	for(i=0;i<N;++i)
 		printf("%3d",i+1);
-	printf("\nĞòÁĞ:");
+	printf("\nåºåˆ—:");
 	for(i=0;i<N;++i)
 		printf("%3d",a[i]);
 
 	while(flag){
-		printf("\nÇëÊäÈëÒª²éÕÒµÄÊı¾İ:num=");
+		printf("\nè¯·è¾“å…¥è¦æŸ¥æ‰¾çš„æ•°æ®:num=");
 		scanf("%d",&num);
 		low=0;
 		high=N-1;
@@ -116,20 +116,20 @@ void BinlfSearch(){
 			if(num==a[mid]){
 				local=mid;
 				sign=1;
-				printf("ĞòÁĞÖĞº¬ÓĞ%d,Î»ÖÃÎª:%d\n",num,local+1);
+				printf("åºåˆ—ä¸­å«æœ‰%d,ä½ç½®ä¸º:%d\n",num,local+1);
 			}
 			else if(num>a[mid])
 				low=mid+1;
 			else high=mid-1;
 		}
 		if(!sign||local==-1)
-			printf("ĞòÁĞÖĞ²»´æÔÚ%d\n",num);
+			printf("åºåˆ—ä¸­ä¸å­˜åœ¨%d\n",num);
 
-		printf("ÄúÊÇ·ñ¼ÌĞø²éÕÒÆäËûÊı¾İ?(Y or N):");
+		printf("æ‚¨æ˜¯å¦ç»§ç»­æŸ¥æ‰¾å…¶ä»–æ•°æ®?(Y or N):");
 		scanf("\n%c",&c);
 		while(c!='Y'&&c!='y'&&c!='N'&&c!='n')
 		{
-			printf("ÄúµÄÊäÈëÓĞÎó,ÇëÊäÈë(Y or N):");
+			printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯,è¯·è¾“å…¥(Y or N):");
 			scanf("%c",&c);
 		}
 		if(c=='N'||c=='n')
@@ -139,38 +139,38 @@ void BinlfSearch(){
 	main();
 }
 
-/* 3.Ò»Î¬Êı×é ÅÅĞòËã·¨*/
+/* 3.ä¸€ç»´æ•°ç»„ æ’åºç®—æ³•*/
 void SortAicglhs(){
-	void QuickSort(int s[],int low,int high);/*¿ìËÙÅÅĞò*/
-	void SelecSort(int s[],int n);/*Ñ¡ÔñÅÅĞò*/
-	void BubblSort(int s[],int n);/*ÆğÅİÅÅĞò*/
-	void InserSort(int s[],int n);/*²åÈëÅÅĞò*/
+	void QuickSort(int s[],int low,int high);/*å¿«é€Ÿæ’åº*/
+	void SelecSort(int s[],int n);/*é€‰æ‹©æ’åº*/
+	void BubblSort(int s[],int n);/*èµ·æ³¡æ’åº*/
+	void InserSort(int s[],int n);/*æ’å…¥æ’åº*/
 
 	int a[N],i,Node,flag=1;
 	char c;
-	printf("\n--------1.¿ìËÙÅÅĞò-------\n");
-	printf("--------2.Ñ¡ÔñÅÅĞò-------\n");
-	printf("--------3.ÆğÅİÅÅĞò-------\n");
-	printf("--------4.²åÈëÅÅĞò-------\n");
+	printf("\n--------1.å¿«é€Ÿæ’åº-------\n");
+	printf("--------2.é€‰æ‹©æ’åº-------\n");
+	printf("--------3.èµ·æ³¡æ’åº-------\n");
+	printf("--------4.æ’å…¥æ’åº-------\n");
 	while(flag){
-		printf("\nÇëÊäÈë³õÊ¼Ğò:");
+		printf("\nè¯·è¾“å…¥åˆå§‹åº:");
 		for(i=0;i<N;++i)
 			scanf("%d",&a[i]);
-		printf("\nÑ¡ÔñÅÅĞòËã·¨:No=");
+		printf("\né€‰æ‹©æ’åºç®—æ³•:No=");
 		scanf("%d",&Node);
 		switch(Node){
-		case 1:printf("¿ìËÙÅÅĞò½á¹û:");QuickSort(a,0,N-1);break;
-		case 2:printf("Ñ¡ÔñÅÅĞò½á¹û:");SelecSort(a,N);break;
-		case 3:printf("ÆğÅİÅÅĞò½á¹û:");BubblSort(a,N);break;
-		case 4:printf("²åÈëÅÅĞò½á¹û:");InserSort(a,N);break;
+		case 1:printf("å¿«é€Ÿæ’åºç»“æœ:");QuickSort(a,0,N-1);break;
+		case 2:printf("é€‰æ‹©æ’åºç»“æœ:");SelecSort(a,N);break;
+		case 3:printf("èµ·æ³¡æ’åºç»“æœ:");BubblSort(a,N);break;
+		case 4:printf("æ’å…¥æ’åºç»“æœ:");InserSort(a,N);break;
 		}
 		for(i=0;i<N;++i)
 			printf("%2d ",a[i]);
-		printf("\nÊÇ·ñ¼ÌĞø£¿(Y or N):");
+		printf("\næ˜¯å¦ç»§ç»­ï¼Ÿ(Y or N):");
 		scanf("\n%c",&c);
 		while(c!='Y'&&c!='y'&&c!='N'&&c!='n')
 		{
-			printf("ÊäÈëÓĞÎó!(Y or N):");
+			printf("è¾“å…¥æœ‰è¯¯!(Y or N):");
 			scanf("\n%c",&c);
 		}
 		if(c=='N'||c=='n')
@@ -230,10 +230,10 @@ void BubblSort(int s[],int n){
 	}
 }
 
-/* 4.Ò»Î¬Êı×é ²åÈëÅÅĞò*/
+/* 4.ä¸€ç»´æ•°ç»„ æ’å…¥æ’åº*/
 void InsertSorts(){
 	int i,j,t,a[N];
-	printf("\nÇëÊäÈëÔ­Ê¼ĞòÁĞ:");
+	printf("\nè¯·è¾“å…¥åŸå§‹åºåˆ—:");
 	for(i=0;i<N;++i)
 		scanf("%d",&a[i]);
 	for(i=0;i<N;++i)
@@ -243,36 +243,36 @@ void InsertSorts(){
 			a[j+1]=a[j];
 		a[j+1]=t;
 	}
-	printf("²åÈëÅÅĞòµÄ½á¹û:");
+	printf("æ’å…¥æ’åºçš„ç»“æœ:");
 	for(i=0;i<N;++i)
 		printf("%2d ",a[i]);
 	Clrscr();
 	main();
 }
 
-/* 5.Ò»Î¬Êı×é ÄæĞòËã·¨*/
+/* 5.ä¸€ç»´æ•°ç»„ é€†åºç®—æ³•*/
 void ReverseSort(){
 	int a[N],i,j,t;
-	printf("\nÇëÊäÈëÔ­Ê¼Ğò:");
+	printf("\nè¯·è¾“å…¥åŸå§‹åº:");
 	for(i=0;i<N;++i)
 		scanf("%d",&a[i]);
 	for(i=0,j=N-1;i<=j;++i,--j)
 	{t=a[i];a[i]=a[j];a[j]=t;}
-	printf("ÄæĞòĞòÁĞ½á¹û:");
+	printf("é€†åºåºåˆ—ç»“æœ:");
 	for(i=0;i<N;++i)
 		printf("%2d ",a[i]);
 	Clrscr();
 	main();
 }
 
-/* 6.¶şÎ¬Êı×é °°µã²éÕÒ*/
+/* 6.äºŒç»´æ•°ç»„ éç‚¹æŸ¥æ‰¾*/
 void AndianSearh(){
 	int i,j,mj,a[4][5],max,flag;
-	printf("ÇëÊäÈë¾ØÕó:\n");
+	printf("è¯·è¾“å…¥çŸ©é˜µ:\n");
 	for(i=0;i<4;++i)
 		for(j=0;j<5;++j)
 			scanf("%d",&a[i][j]);
-	printf("ÄúÊäÈëµÄ¾ØÕóÎª:\n");
+	printf("æ‚¨è¾“å…¥çš„çŸ©é˜µä¸º:\n");
 	for(i=0;i<4;++i){
 		for(j=0;j<5;++j)
 			printf("%3d ",a[i][j]);
@@ -297,26 +297,26 @@ void AndianSearh(){
 			}
 		if(flag)
 		{
-			printf("°°µãÎª:a[%d][%d]=%d\n",i,mj,max);
+			printf("éç‚¹ä¸º:a[%d][%d]=%d\n",i,mj,max);
 			break;
 		}
 	}
 	if(!flag)
-		printf("²»´æÔÚ°°µã\n");
+		printf("ä¸å­˜åœ¨éç‚¹\n");
 	Clrscr();
 	main();
 }
 
-/* 7.¶şÎ¬Êı×é ¶Ô½ÇÏßºÍ*/
+/* 7.äºŒç»´æ•°ç»„ å¯¹è§’çº¿å’Œ*/
 void LinesMartix(){
 	int i,j,a[3][3],s=0;
-	printf("\nÇëÊäÈë¾ØÕóÊı¾İ:\n");
+	printf("\nè¯·è¾“å…¥çŸ©é˜µæ•°æ®:\n");
 	for(i=0;i<3;++i)
 	{
 		for(j=0;j<3;++j)
 			scanf("%d",&a[i][j]);
 	}
-	printf("ÄúÊäÈëµÄ¾ØÕóÎª:\n");
+	printf("æ‚¨è¾“å…¥çš„çŸ©é˜µä¸º:\n");
 	for(i=0;i<3;++i)
 	{
 		for(j=0;j<3;++j)
@@ -328,12 +328,12 @@ void LinesMartix(){
 		for(j=0;j<3;++j)
 			if(i=j)	s+=a[i][j];
 	}
-	printf("Ö÷¶Ó½ÇÏßÖ®ºÍÎª:%d",s);
+	printf("ä¸»é˜Ÿè§’çº¿ä¹‹å’Œä¸º:%d",s);
 	Clrscr();
 	main();
 }
 
-/* 8.¶şÎ¬Êı×é Ñî»ÔÈı½Ç*/
+/* 8.äºŒç»´æ•°ç»„ æ¨è¾‰ä¸‰è§’*/
 void YanghMartix(){
 	int i,j,a[N][N];
 	for(i=0;i<N;++i)
@@ -353,7 +353,7 @@ void YanghMartix(){
 	main();
 }
 
-/* 9.¶şÎ¬Êı×é Í¼°¸Êä³ö*/
+/* 9.äºŒç»´æ•°ç»„ å›¾æ¡ˆè¾“å‡º*/
 void PrintMartix(){
 	int i,j,k;
 	char space=' ',a[5]={'*','*','*','*','*'};
@@ -368,12 +368,12 @@ void PrintMartix(){
 	main();
 }
 
-/*10.¶şÎ¬Êı×é Ä§·½¾ØÕó*/
+/*10.äºŒç»´æ•°ç»„ é­”æ–¹çŸ©é˜µ*/
 void MagicMartix(){
 	int a[15][15],i,j,k,p,n;
 	p=1;
 	while(p){
-		printf("ÇëÊäÈëN=");
+		printf("è¯·è¾“å…¥N=");
 		scanf("%d",&n);
 		if((n!=0)&&(n<=15)&&(n%2!=0))
 			p=0;

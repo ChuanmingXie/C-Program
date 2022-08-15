@@ -1,4 +1,4 @@
-/*¿ÆÑ§¼ÆËã*/
+/*ç§‘å­¦è®¡ç®—*/
 #include<stdlib.h>
 #include<stdio.h>
 #include<conio.h>
@@ -11,11 +11,11 @@ int main()
 	void LXiComput();
 	void DkuComput();
 	void CriComput();
-	printf("------1.¼ÆËãGDP-------\n");
-	printf("------2.¼ÆËãÀûÏ¢------\n");
-	printf("------3.¼ÆËã´û¿î------\n");
-	printf("------4.Ô²ĞÎ¼ÆËã------\n");
-	printf("ÇëÊäÈëÒª½øĞĞ¼ÆËãµÄ±àºÅ:");
+	printf("------1.è®¡ç®—GDP-------\n");
+	printf("------2.è®¡ç®—åˆ©æ¯------\n");
+	printf("------3.è®¡ç®—è´·æ¬¾------\n");
+	printf("------4.åœ†å½¢è®¡ç®—------\n");
+	printf("è¯·è¾“å…¥è¦è¿›è¡Œè®¡ç®—çš„ç¼–å·:");
 	scanf("%d",&Num);
 	switch(Num)
 	{
@@ -32,42 +32,42 @@ int main()
 void GDPComput()
 {
 	double r=0,y=0;
-	printf("\nÇëÊäÈëÄêÔö³¤ÂÊr,ÄêÊıy:r,y=");
+	printf("\nè¯·è¾“å…¥å¹´å¢é•¿ç‡r,å¹´æ•°y:r,y=");
 	scanf("%lf,%lf",&r,&y);
-	printf("%5.2lfÄêºóGDPÎªµ±½ñ%5.3lf±¶\n\n",y,pow(1+r,y));
+	printf("%5.2lfå¹´åGDPä¸ºå½“ä»Š%5.3lfå€\n\n",y,pow(1+r,y));
 	main();
 }
 
 void LXiComput()
 {
 	double r1=0.0585,r2=0.054,r3=0.0468,r4=0.0414,r5=0.0072,p=1000;
-	printf("5Äê¶¨ÆÚ±¾Ï¢ºÍ:      %5.2lf\n",p*((1+r1)*5));
-	printf("2+3Äê±¾Ï¢ºÍ:        %5.2lf\n",p*(1+r3*2)*(1+r2*3));
-	printf("3+2Äê±¾Ï¢ºÍ:        %5.2lf\n",p*(1+r2*3)*(1+r3*2));
-	printf("1Äê¶¨ÆÚ´æÎå´Î±¾Ï¢ºÍ:%5.2lf\n",p*pow(1+r4,5));
-	printf("5Äê»îÆÚ±¾Ï¢ºÍ:      %5.2lf\n\n",p*pow(1+r5/4,4*5));
+	printf("5å¹´å®šæœŸæœ¬æ¯å’Œ:      %5.2lf\n",p*((1+r1)*5));
+	printf("2+3å¹´æœ¬æ¯å’Œ:        %5.2lf\n",p*(1+r3*2)*(1+r2*3));
+	printf("3+2å¹´æœ¬æ¯å’Œ:        %5.2lf\n",p*(1+r2*3)*(1+r3*2));
+	printf("1å¹´å®šæœŸå­˜äº”æ¬¡æœ¬æ¯å’Œ:%5.2lf\n",p*pow(1+r4,5));
+	printf("5å¹´æ´»æœŸæœ¬æ¯å’Œ:      %5.2lf\n\n",p*pow(1+r5/4,4*5));
 	main();
 }
 
 void DkuComput()
 {
 	double d=0,p=0,r=0;
-	printf("ÇëÊäÈë´û¿î×Ü¶î,»¹¿îÔÂ¶î,ÔÂÀûÂÊ:\nd,p,r=");
+	printf("è¯·è¾“å…¥è´·æ¬¾æ€»é¢,è¿˜æ¬¾æœˆé¢,æœˆåˆ©ç‡:\nd,p,r=");
 	scanf("%lf,%lf,%lf",&d,&p,&r);
-	printf("ÄúĞèÒª»¹¿î%5.2lf¸öÔÂ\n\n",log10(p/(p-d*r))/log10(1+r));//×¢Òâ¶ÔÊı±íÊ¾·¨
+	printf("æ‚¨éœ€è¦è¿˜æ¬¾%5.2lfä¸ªæœˆ\n\n",log10(p/(p-d*r))/log10(1+r));//æ³¨æ„å¯¹æ•°è¡¨ç¤ºæ³•
 	main();
 }
 
 void CriComput()
 {
 	double PI=3.141526,r=0,h=0;
-	printf("ÇëÊäÈëÔ²°ë¾¶,Ô²Öù:r,h=");
+	printf("è¯·è¾“å…¥åœ†åŠå¾„,åœ†æŸ±:r,h=");
 	scanf("%lf,%lf",&r,&h);
-	printf("Ô²ĞÎÖÜ³¤:%5.2lf\n",2*PI*r);
-	printf("Ô²ĞÎÃæ»ı:%5.2lf\n",PI*r*r);
-	printf("Ô²ÖùÌå»ı:%5.2lf\n",PI*r*r*h);
-	printf("ÇòĞÎÃæ»ı:%5.2lf\n",4*PI*r*r);
-	printf("ÇòĞÎÌå»ı:%5.2lf\n\n",(3.0/4.0)*PI*r*r*r);
+	printf("åœ†å½¢å‘¨é•¿:%5.2lf\n",2*PI*r);
+	printf("åœ†å½¢é¢ç§¯:%5.2lf\n",PI*r*r);
+	printf("åœ†æŸ±ä½“ç§¯:%5.2lf\n",PI*r*r*h);
+	printf("çƒå½¢é¢ç§¯:%5.2lf\n",4*PI*r*r);
+	printf("çƒå½¢ä½“ç§¯:%5.2lf\n\n",(3.0/4.0)*PI*r*r*r);
 	main();
 }
 

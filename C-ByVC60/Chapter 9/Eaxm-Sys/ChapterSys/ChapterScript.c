@@ -19,12 +19,12 @@ void fun9_1_1()
 {
 	FILE* in;
 	//char infile[10];
-	printf("\n------------ÕâÊÇ9.1.1µÄÑ§Ï°ÄÚÈÝ------------\n");
-	//printf("ÊäÈëÎÄ¼þÃû:");
+	printf("\n------------è¿™æ˜¯9.1.1çš„å­¦ä¹ å†…å®¹------------\n");
+	//printf("è¾“å…¥æ–‡ä»¶å:");
 	//scanf("%s",infile);
 	if ((in = fopen("9.1.1.txt", "r")) == NULL)
 	{
-		printf("ÎÞ·¨´ò¿ª´ËÎÄ¼þ\n");
+		printf("æ— æ³•æ‰“å¼€æ­¤æ–‡ä»¶\n");
 		Back1_One();
 	}
 	while (!feof(in))
@@ -38,10 +38,10 @@ void fun9_1_1()
 void fun9_1_2()
 {
 	FILE *in;
-	printf("\n------------ÕâÊÇ9.1.2µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.1.2çš„å­¦ä¹ å†…å®¹------------\n");
 	if((in=fopen("9.1.2.txt","r"))==NULL)
 	{
-		printf("ÎÞ·¨´ò¿ªÎÄ¼þ");
+		printf("æ— æ³•æ‰“å¼€æ–‡ä»¶");
 		Back1_One();
 	}
 	while(!(feof(in)))
@@ -61,7 +61,7 @@ void fun9_1_3()
 		char addr[20];
 	}a={10101,"Li Lin",'M',"123 HuaiBei Road"};
 
-	printf("\n------------ÕâÊÇ9.1.3µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.1.3çš„å­¦ä¹ å†…å®¹------------\n");
 	printf("NO.:%ld\nname:%s\nsex:%c\nadress:%s\n",a.num,a.name,a.sex,a.addr);
 	Back1_One();
 }
@@ -74,11 +74,11 @@ void fun9_1_4()
 		float score;
 	}student1,student2;
 
-	printf("\n------------ÕâÊÇ9.1.4µÄÑ§Ï°ÄÚÈÝ------------\n");
-	printf("ÇëÊäÈëÁ½ÈËµÄÐÅÏ¢:\n");
+	printf("\n------------è¿™æ˜¯9.1.4çš„å­¦ä¹ å†…å®¹------------\n");
+	printf("è¯·è¾“å…¥ä¸¤äººçš„ä¿¡æ¯:\n");
 	scanf_s("%d%s%f",&student1.num,student1.name,&student1.score);
 	scanf_s("%d%s%f",&student2.num,student2.name,&student2.score);
-	printf("·ÖÊý×î¸ßµÄÊÇ:\n");
+	printf("åˆ†æ•°æœ€é«˜çš„æ˜¯:\n");
 	if(student1.score>student2.score)
 		printf("%d	%s	%6.2f\n",student1.num,student1.name,student1.score);
 	else if(student1.score<student2.score)
@@ -109,8 +109,8 @@ void fun9_2_1()
 
 	int i, j;
 	char leader_name[20];
-	printf("\n------------ÕâÊÇ9.2.1µÄÑ§Ï°ÄÚÈÝ------------\n");
-	printf("\nÇëÊäÈëÑ¡Æ±ÄÚÈÝ\n");
+	printf("\n------------è¿™æ˜¯9.2.1çš„å­¦ä¹ å†…å®¹------------\n");
+	printf("\nè¯·è¾“å…¥é€‰ç¥¨å†…å®¹\n");
 	for (i = 0; i < 10; ++i)
 	{
 		scanf("%s", leader_name);
@@ -121,7 +121,7 @@ void fun9_2_1()
 		}
 	}
 
-	printf("Í³¼Æ½á¹ûÎª:\n");
+	printf("ç»Ÿè®¡ç»“æžœä¸º:\n");
 	for (i = 0; i < 3; ++i)
 	{
 		printf("%5s:%d\n", leader[i].name, leader[i].count);
@@ -148,8 +148,8 @@ void fun9_2_2()
 	struct Student tempStu;
 	const int n=5;
 	int i,j,k;
-	printf("\n------------ÕâÊÇ9.2.2µÄÑ§Ï°ÄÚÈÝ------------\n");
-	printf("Í³¼Æ½á¹ûÎª:\n");
+	printf("\n------------è¿™æ˜¯9.2.2çš„å­¦ä¹ å†…å®¹------------\n");
+	printf("ç»Ÿè®¡ç»“æžœä¸º:\n");
 	for(i=0;i<n-1;++i)
 	{
 		k=i;
@@ -190,7 +190,7 @@ void fun9_3_1(){
 	strcpy(stu_1.name,"Li Lin");
 	stu_1.sex='M';
 	stu_1.score=89.5;
-	printf("\n------------ÕâÊÇ9.3.1µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.3.1çš„å­¦ä¹ å†…å®¹------------\n");
 	printf("NO:%6ld Name:%10s Sex:%2c Score:%6.2f\n",stu_1.num,stu_1.name,stu_1.sex,stu_1.score);
 	printf("NO:%6ld Name:%10s Sex:%2c Score:%6.2f\n",(*p).num,(*p).name,(*p).sex,(*p).score);
 	printf("NO:%6ld Name:%10s Sex:%2c Score:%6.2f\n",p->num,p->name,p->sex,p->score);
@@ -210,7 +210,7 @@ void fun9_3_2(){
 		{10103,"Xu Yan",'F',78.5}
 	};
 	struct Student *p;
-	printf("\n------------ÕâÊÇ9.3.2µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.3.2çš„å­¦ä¹ å†…å®¹------------\n");
 	printf("No	  Name   Sex  Score\n");
 	for(p=Stu;p<Stu+3;++p)
 	{
@@ -233,7 +233,7 @@ void fun9_3_3()
 	void input(struct Student stu[]);
 	void print(struct Student stu);
 	struct Student Max(struct Student stu[]);
-	printf("\n------------ÕâÊÇ9.3.3µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.3.3çš„å­¦ä¹ å†…å®¹------------\n");
 	input(p);
 	print(Max(p));
 	Back3_Thr();
@@ -242,7 +242,7 @@ void input(struct Student stu[])
 {
 	int i, j;
 	float sum;
-	printf("\n----ÇëÊäÈë¸÷¸öÑ§ÉúÐÅÏ¢:Ñ§ºÅ¡¢ÐÕÃû¡¢³É¼¨----\n");
+	printf("\n----è¯·è¾“å…¥å„ä¸ªå­¦ç”Ÿä¿¡æ¯:å­¦å·ã€å§“åã€æˆç»©----\n");
 	for (i = 0; i < N; ++i)
 	{
 		sum = 0;
@@ -279,7 +279,7 @@ struct Student Max(struct Student stu[])
 void print(struct Student stu)
 {
 	int i;
-	printf("\n------×î¸ß³É¼¨Ñ§Éú£ºÑ§ºÅ¡¢ÐÕÃû¡¢³É¼¨------\n");
+	printf("\n------æœ€é«˜æˆç»©å­¦ç”Ÿï¼šå­¦å·ã€å§“åã€æˆç»©------\n");
 	printf("%5d%10s",stu.num,stu.name);
 	for(i=0;i<N;i++)
 	{
@@ -295,8 +295,8 @@ void Back4_Fou(){
 }
 void fun9_4_1(){
 	FILE *in;
-	printf("\n------------ÕâÊÇ9.4.1µÄÑ§Ï°ÄÚÈÝ------------\n");
-	printf("Á´±íµÄ½Úµã½á¹¹ÌåÎª:\n");
+	printf("\n------------è¿™æ˜¯9.4.1çš„å­¦ä¹ å†…å®¹------------\n");
+	printf("é“¾è¡¨çš„èŠ‚ç‚¹ç»“æž„ä½“ä¸º:\n");
 	in=fopen("9.4.1.txt","r");
 	while(!feof(in))
 		putchar(fgetc(in));
@@ -311,7 +311,7 @@ void fun9_4_2(){
 		struct Student *next;
 	};
 	struct Student a,b,c,*head,*p;
-	printf("\n------------ÕâÊÇ9.4.2µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.4.2çš„å­¦ä¹ å†…å®¹------------\n");
 
 	a.num=10101;
 	a.score=98.5;
@@ -345,7 +345,7 @@ struct Students* creat()
 	struct Students* L, * s, * r;
 	s = r = (struct Students*)malloc(sizeof(struct Students));
 	L = s;
-	printf("ÇëÊäÈëÑ§ÉúÊý¾Ý,ÒÔÁã½áÊøÊäÈë:\n");
+	printf("è¯·è¾“å…¥å­¦ç”Ÿæ•°æ®,ä»¥é›¶ç»“æŸè¾“å…¥:\n");
 	scanf("%ld%f", &s->num, &s->score);
 	while (s->num != 0)
 	{
@@ -372,14 +372,14 @@ void prints(struct Students *head)
 
 void fun9_4_3(){
 	struct Students *pt;
-	printf("\n------------ÕâÊÇ9.4.3µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.4.3çš„å­¦ä¹ å†…å®¹------------\n");
 	pt=creat();
 	printf("\nnum:%ld\nscore:%8.2f\n",pt->num,pt->score);
 	Back4_Fou();
 }
 void fun9_4_4(){
 	struct Students *p;
-	printf("\n------------ÕâÊÇ9.4.4µÄÑ§Ï°ÄÚÈÝ------------\n");
+	printf("\n------------è¿™æ˜¯9.4.4çš„å­¦ä¹ å†…å®¹------------\n");
 	p=creat();
 	prints(p);
 	Back4_Fou();
@@ -407,7 +407,7 @@ void fun9_5_1(){
 	}B;
 
 	FILE *in;
-	printf("\n------------ÕâÊÇ9.5.1µÄÑ§Ï°ÄÚÈÝ-----------\n");
+	printf("\n------------è¿™æ˜¯9.5.1çš„å­¦ä¹ å†…å®¹-----------\n");
 	in=fopen("9.5.1.txt","r");
 	while(!feof(in))
 		putchar(fgetc(in));
@@ -419,7 +419,7 @@ void fun9_5_1(){
 }
 void fun9_5_2(){
 	FILE *in;
-	printf("\n------------ÕâÊÇ9.5.2µÄÑ§Ï°ÄÚÈÝ-----------\n");
+	printf("\n------------è¿™æ˜¯9.5.2çš„å­¦ä¹ å†…å®¹-----------\n");
 	
 	in=fopen("9.5.2.txt","r");
 	while(!feof(in))
@@ -439,7 +439,7 @@ void fun9_5_3(){
 	union Data c={c.ch='K'};
 	union Data d;
 
-	printf("\n------------ÕâÊÇ9.5.3µÄÑ§Ï°ÄÚÈÝ-----------\n");
+	printf("\n------------è¿™æ˜¯9.5.3çš„å­¦ä¹ å†…å®¹-----------\n");
 	
 	a.i=97;					//a
 	printf("i=%d\n",a.i);
@@ -472,10 +472,10 @@ void fun9_5_4(){
 		}category;
 	}person[2];
 	int i;
-	printf("\n------------ÕâÊÇ9.5.4µÄÑ§Ï°ÄÚÈÝ-----------\n");
+	printf("\n------------è¿™æ˜¯9.5.4çš„å­¦ä¹ å†…å®¹-----------\n");
 	for (i = 0; i < 2; ++i)
 	{
-		printf("ÇëÊäÈëµÚ%d¸öÈËÔ±ÐÅÏ¢:\n", i + 1);
+		printf("è¯·è¾“å…¥ç¬¬%dä¸ªäººå‘˜ä¿¡æ¯:\n", i + 1);
 		scanf("%d %s %c %c", &person[i].num, person[i].name, &person[i].sex, &person[i].job);
 		if (person[i].job == 's')
 			scanf("%d", &person[i].category.clas);
@@ -506,7 +506,7 @@ void fun9_6_1()
 	int n, loop;
 	n = 0;
 
-	printf("\n------------ÕâÊÇ9.6.1µÄÑ§Ï°ÄÚÈÝ-----------\n");
+	printf("\n------------è¿™æ˜¯9.6.1çš„å­¦ä¹ å†…å®¹-----------\n");
 	for (i = red; i <= black; ++i)
 	{
 		for (j = red; i <= black; ++j)
@@ -544,6 +544,6 @@ void fun9_6_1()
 			}
 		}
 	}
-	printf("×ÜÊýÎª:%5d\n", n);
+	printf("æ€»æ•°ä¸º:%5d\n", n);
 }
 

@@ -1,36 +1,36 @@
-/*¶ş¼¶º¯Êı*/
+/*äºŒçº§å‡½æ•°*/
 #include<stdio.h>
 #include<math.h>
 #define N 10
 
-/*ÊäÈëÕûÊı:*/
+/*è¾“å…¥æ•´æ•°:*/
 void InputNum(int *x)
 {
-	printf("ÇëÊäÈëÊı¾İ:");
+	printf("è¯·è¾“å…¥æ•°æ®:");
 	scanf("%d",x);
 }
 
-/*¸¡µãÊıÊäÈë:*/
+/*æµ®ç‚¹æ•°è¾“å…¥:*/
 void InputDou(double *x)
 {
-	printf("ÇëÊäÈëÊı¾İ:");
+	printf("è¯·è¾“å…¥æ•°æ®:");
 	scanf("%lf",x);
 }
 
-/*ÊäÈëÊı×é:*/
+/*è¾“å…¥æ•°ç»„:*/
 void InputArr(int arr[N])
 {
 	int i;
-	printf("ÊäÈëÔ­Ê¼ĞòÁĞ:\n");
+	printf("è¾“å…¥åŸå§‹åºåˆ—:\n");
 	for(i=0;i<N;++i)
 		scanf("%d",&arr[i]);
 }
 
-/*Êä³öÊı×é:*/
+/*è¾“å‡ºæ•°ç»„:*/
 void OuputArr(int arr[N])
 {
 	int i;
-	printf("Êä³öÅÅĞòÊı¾İ:\n");
+	printf("è¾“å‡ºæ’åºæ•°æ®:\n");
 	for(i=0;i<N;++i)
 		printf("%3d",arr[i]);
 }
@@ -56,8 +56,8 @@ void Gnumberfun(int p,int q)
 		p=q;
 		q=r;
 	}
-	printf("×î´ó¹«Ô¼Êı:%d\n",p);
-	printf("×îĞ¡¹«±¶Êı:%d\n",s/p);
+	printf("æœ€å¤§å…¬çº¦æ•°:%d\n",p);
+	printf("æœ€å°å…¬å€æ•°:%d\n",s/p);
 }
 
 int YerTurnDay(int year,int month,int day)

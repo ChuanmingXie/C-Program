@@ -1,4 +1,4 @@
-/*²âÊÔÄ³ÊıÊÇ·ñÍ¬Ê±±»3£¬5Õû³ı*/
+/*æµ‹è¯•æŸæ•°æ˜¯å¦åŒæ—¶è¢«3ï¼Œ5æ•´é™¤*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
@@ -7,7 +7,7 @@ int main()
 	int N;
 	void FlagWay(int n);
 	void Way2(int n);
-	printf("ÇëÊäÈëĞèÒª²âÊÔµÄÊı¾İ\nN=");
+	printf("è¯·è¾“å…¥éœ€è¦æµ‹è¯•çš„æ•°æ®\nN=");
 	scanf("%d",&N);
 	Way2(N);
 	FlagWay(N);
@@ -15,23 +15,23 @@ int main()
 	return 0;
 }
 
-/*Ö±½Ó·¨²â¶¨*/
+/*ç›´æ¥æ³•æµ‹å®š*/
 void Way2(int n)
 {
 	if((n%3==0)&&(n%5==0))
-		printf("%dÄÜ±»3ºÍ5Í¬Ê±Õû³ı\n\n",n);
-	else printf("%d²»ÄÜ±»3ºÍ5Í¬Ê±Õû³ı\n\n",n);
+		printf("%dèƒ½è¢«3å’Œ5åŒæ—¶æ•´é™¤\n\n",n);
+	else printf("%dä¸èƒ½è¢«3å’Œ5åŒæ—¶æ•´é™¤\n\n",n);
 }
 
-/*±êÖ¾·¨²â¶¨*/
+/*æ ‡å¿—æ³•æµ‹å®š*/
 void FlagWay(int n)	
 {
 	int flag=0;
-	if(n%3!=0) {flag=-1;printf("%d²»ÄÜ±»3Õû³ı\n",n);}
-	if(n%5!=0) {flag=-1;printf("%d²»ÄÜ±»5Õû³ı\n",n);}
+	if(n%3!=0) {flag=-1;printf("%dä¸èƒ½è¢«3æ•´é™¤\n",n);}
+	if(n%5!=0) {flag=-1;printf("%dä¸èƒ½è¢«5æ•´é™¤\n",n);}
 
 	if(flag==0)
-		printf("%dÄÜ±»3ºÍ5Í¬Ê±Õû³ı\n",n);
+		printf("%dèƒ½è¢«3å’Œ5åŒæ—¶æ•´é™¤\n",n);
 	else
-		printf("%d²»ÄÜ±»3ºÍ5Í¬Ê±Õû³ı\n",n);
+		printf("%dä¸èƒ½è¢«3å’Œ5åŒæ—¶æ•´é™¤\n",n);
 }

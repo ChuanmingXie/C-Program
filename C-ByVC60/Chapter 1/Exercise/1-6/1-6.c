@@ -1,14 +1,14 @@
-/*Êä³öÈıÊıÖ®ÖĞ×î´óÊı*/
+/*è¾“å‡ºä¸‰æ•°ä¹‹ä¸­æœ€å¤§æ•°*/
 
 #include <stdio.h>
 
 int main()
 {
-	int Max(int x,int y,int z);    //º¯ÊıÉùÃ÷
+	int Max(int x,int y,int z);    //å‡½æ•°å£°æ˜
 	
 	int a,b,c;
-	printf("ÇëÊäÈë²âÊÔÊı¾İ:\n");
-	scanf("%d,%d,%d",&a,&b,&c);    //¼ÇµÃÔÚ%dÖ®¼ä¼Ó¡°£¬¡±
+	printf("è¯·è¾“å…¥æµ‹è¯•æ•°æ®:\n");
+	scanf("%d,%d,%d",&a,&b,&c);    //è®°å¾—åœ¨%dä¹‹é—´åŠ â€œï¼Œâ€
 	printf("Max is %d\n",Max(a,b,c));
 	return 0;
 }

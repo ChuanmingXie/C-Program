@@ -1,36 +1,36 @@
-/*×Ö·û´®Êý×éµÄËã·¨*/
+/*å­—ç¬¦ä¸²æ•°ç»„çš„ç®—æ³•*/
 #include<stdlib.h>
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
 
-void StrStatis();/*1.×Ö·û´®µÄÍ³¼Æ*/
-void StrEncryp();/*2.×Ö·û´®µÄ¼ÓÃÜ*/
-void StrEncryp2();/*2.×Ö·û´®µÄ¼ÓÃÜ*/
-void StrConnec();/*3.×Ö·û´®µÄÁ¬½Ó*/
-void StrCompar();/*4.×Ö·û´®µÄ±È½Ï*/
-void StrsCopys();/*5.×Ö·û´®µÄ±È½Ï*/
+void StrStatis();/*1.å­—ç¬¦ä¸²çš„ç»Ÿè®¡*/
+void StrEncryp();/*2.å­—ç¬¦ä¸²çš„åŠ å¯†*/
+void StrEncryp2();/*2.å­—ç¬¦ä¸²çš„åŠ å¯†*/
+void StrConnec();/*3.å­—ç¬¦ä¸²çš„è¿žæŽ¥*/
+void StrCompar();/*4.å­—ç¬¦ä¸²çš„æ¯”è¾ƒ*/
+void StrsCopys();/*5.å­—ç¬¦ä¸²çš„æ¯”è¾ƒ*/
 
-void Clrscr();/*Ð¡Ð¡µÄÇåÆÁº¯Êý*/
+void Clrscr();/*å°å°çš„æ¸…å±å‡½æ•°*/
 
 int main()
 {
 	int No;
-	printf("----------1.×Ö·û´®µÄÍ³¼Æ---------\n");
-	printf("----------2.×Ö·û´®µÄ¼ÓÃÜ---------\n");
-	printf("----------3.×Ö·û´®µÄÁ¬½Ó---------\n");
-	printf("----------4.×Ö·û´®µÄ±È½Ï---------\n");
-	printf("----------5.×Ö·û´®µÄ±È½Ï---------\n");
-	printf("ÇëÊäÈëÒªÕ¹Ê¾µÄËã·¨±àºÅ:No=");scanf("%d",&No);
+	printf("----------1.å­—ç¬¦ä¸²çš„ç»Ÿè®¡---------\n");
+	printf("----------2.å­—ç¬¦ä¸²çš„åŠ å¯†---------\n");
+	printf("----------3.å­—ç¬¦ä¸²çš„è¿žæŽ¥---------\n");
+	printf("----------4.å­—ç¬¦ä¸²çš„æ¯”è¾ƒ---------\n");
+	printf("----------5.å­—ç¬¦ä¸²çš„æ¯”è¾ƒ---------\n");
+	printf("è¯·è¾“å…¥è¦å±•ç¤ºçš„ç®—æ³•ç¼–å·:No=");scanf("%d",&No);
 	while(No>5||No<=0){
-		printf("ÄúµÄÊäÈëÓÐÎó,ÇëÖØÐÂÊäÈë:No=");scanf("%d",&No);
+		printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯,è¯·é‡æ–°è¾“å…¥:No=");scanf("%d",&No);
 	}
 	switch(No){
-	case 1: StrStatis();break;/*1.×Ö·û´®µÄÍ³¼Æ*/
-	case 2: StrEncryp2();break;/*2.×Ö·û´®µÄ¼ÓÃÜ*/
-	case 3: StrConnec();break;/*3.×Ö·û´®µÄÁ¬½Ó*/
-	case 4: StrCompar();break;/*4.×Ö·û´®µÄ±È½Ï*/
-	case 5: StrsCopys();break;/*5.×Ö·û´®µÄ±È½Ï*/
+	case 1: StrStatis();break;/*1.å­—ç¬¦ä¸²çš„ç»Ÿè®¡*/
+	case 2: StrEncryp2();break;/*2.å­—ç¬¦ä¸²çš„åŠ å¯†*/
+	case 3: StrConnec();break;/*3.å­—ç¬¦ä¸²çš„è¿žæŽ¥*/
+	case 4: StrCompar();break;/*4.å­—ç¬¦ä¸²çš„æ¯”è¾ƒ*/
+	case 5: StrsCopys();break;/*5.å­—ç¬¦ä¸²çš„æ¯”è¾ƒ*/
 	default :getch();
 	}
 	getch();
@@ -41,16 +41,16 @@ void Clrscr()
 	if(getch())
 		system("CLS");
 }
-/*1.×Ö·û´®µÄÍ³¼Æ*/
+/*1.å­—ç¬¦ä¸²çš„ç»Ÿè®¡*/
 void StrStatis(){
 	char text[3][80];
 	int i,j,upp,low,dig,span,othe;
 	upp=low=dig=span=othe=0;
 	for(i=0;i<3;++i)
 	{
-		printf("ÇëÊäÈëµÚ%dÐÐ×Ö·û´®:\n",i+1);
+		printf("è¯·è¾“å…¥ç¬¬%dè¡Œå­—ç¬¦ä¸²:\n",i+1);
 		scanf("\n");
-		gets(text[i]);	/*²»ÄÜÓÃscanf("%s",text);scnafÖÐ¿Õ¸ñ´ú±íÊäÈëÍê³É£¬ºóÃæµÄÄÚÈÝ²»¼ÆÈëtext*/
+		gets(text[i]);	/*ä¸èƒ½ç”¨scanf("%s",text);scnafä¸­ç©ºæ ¼ä»£è¡¨è¾“å…¥å®Œæˆï¼ŒåŽé¢çš„å†…å®¹ä¸è®¡å…¥text*/
 		for(j=0;j<80&&text[i][j]!='\0';++j)
 		{
 			if(text[i][j]>='A'&&text[i][j]<='Z')
@@ -65,19 +65,19 @@ void StrStatis(){
 				othe++;
 		}
 	}
-	printf("´óÐ´×ÖÄ¸:%3d\nÐ¡Ð´×ÖÄ¸:%3d\nÊý×Ö×Ö·û:%3d\n¿Õ¸ñ×Ö·û:%3d\nÆäËû×Ö·û:%3d\n",upp,low,dig,span,othe);
+	printf("å¤§å†™å­—æ¯:%3d\nå°å†™å­—æ¯:%3d\næ•°å­—å­—ç¬¦:%3d\nç©ºæ ¼å­—ç¬¦:%3d\nå…¶ä»–å­—ç¬¦:%3d\n",upp,low,dig,span,othe);
 	Clrscr();
 	main();
 }
 
-/*2.×Ö·û´®µÄ½âÃÜ*/
+/*2.å­—ç¬¦ä¸²çš„è§£å¯†*/
 void StrEncryp(){
 	int j=0;
 	char ch[80],tran[80];
-	printf("ÇëÊäÈëÃÜÎÄ:");
+	printf("è¯·è¾“å…¥å¯†æ–‡:");
 	scanf("\n");
 	gets(ch);
-	printf("ÊäÈëµÄÃÜÎÄ:%s\n",ch);
+	printf("è¾“å…¥çš„å¯†æ–‡:%s\n",ch);
 	while(ch[j]!='\0')
 	{
 		if((ch[j]>='A')&&(ch[j]<='Z'))
@@ -89,7 +89,7 @@ void StrEncryp(){
 		++j;
 	}
 	tran[j]='\0';
-	printf("½âÃÜµÄÃ÷ÎÄ:%s",tran);
+	printf("è§£å¯†çš„æ˜Žæ–‡:%s",tran);
 	Clrscr();
 	main();
 }
@@ -97,9 +97,9 @@ void StrEncryp2()
 {
 	int i=0;
 	char ch[80];
-	printf("ÇëÊäÈëÃÜÎÄ:");
+	printf("è¯·è¾“å…¥å¯†æ–‡:");
 	scanf("\n");gets(ch);
-	printf("ÊäÈëµÄÃÜÎÄ:%s\n",ch);
+	printf("è¾“å…¥çš„å¯†æ–‡:%s\n",ch);
 	while(ch[i]!='\0')
 	{
 		if(ch[i]>='A'&&ch[i]<='Z')
@@ -108,29 +108,29 @@ void StrEncryp2()
 			ch[i]=219-ch[i];
 		++i;
 	}
-	printf("½âÃÜµÄÃ÷ÎÄ:%s",ch);
+	printf("è§£å¯†çš„æ˜Žæ–‡:%s",ch);
 	Clrscr();
 	main();
 }
 
-/*3.×Ö·û´®µÄÁ¬½Ó*/
+/*3.å­—ç¬¦ä¸²çš„è¿žæŽ¥*/
 void StrConnec(){
 	int i=0,j=0;
 	char s1[80],s2[40];
-	printf("ÇëÊäÈëµÚÒ»¸ö×Ö·û´®:");
+	printf("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªå­—ç¬¦ä¸²:");
 	scanf("\n%s",s1);
-	printf("ÇëÊäÈëµÚ¶þ¸ö×Ö·û´®:");
+	printf("è¯·è¾“å…¥ç¬¬äºŒä¸ªå­—ç¬¦ä¸²:");
 	scanf("%s",s2);
 	while(s1[i]!='\0')++i;
 	for(;s2[j]!='\0';++i,++j)
 		s1[i]=s2[j];
 	s1[i]='\0';
-	printf("½«Á½×Ö·û´®ºÏ²¢ºóµÃ:%s",s1);
+	printf("å°†ä¸¤å­—ç¬¦ä¸²åˆå¹¶åŽå¾—:%s",s1);
 	Clrscr();
 	main();
 }
 
-/*4.×Ö·û´®µÄ±È½Ï*/
+/*4.å­—ç¬¦ä¸²çš„æ¯”è¾ƒ*/
 void StrCompar(){
 	int i=0,result=0;
 	char s1[100],s2[100];
@@ -151,7 +151,7 @@ void StrCompar(){
 	main();
 }
 
-/*5.×Ö·û´®µÄ¸´ÖÆ*/
+/*5.å­—ç¬¦ä¸²çš„å¤åˆ¶*/
 void StrsCopys(){
 	char s1[80],s2[80];
 	int i;
@@ -159,7 +159,7 @@ void StrsCopys(){
 	scanf("\n%s",s1);
 	for(i=0;s1[i]!='\0';++i)
 		s2[i]=s1[i];
-	s2[i]='\0';			/*´Ê¾ä²»Ð´£¬ºóÃæµÄ×Ö·ûÈ«²¿±äÎª 'ÌÌ'*/
+	s2[i]='\0';			/*è¯å¥ä¸å†™ï¼ŒåŽé¢çš„å­—ç¬¦å…¨éƒ¨å˜ä¸º 'çƒ«'*/
 	printf("s2=%s",s2);
 	Clrscr();
 	main();

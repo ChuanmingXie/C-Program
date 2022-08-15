@@ -1,25 +1,25 @@
-/*Çó±àÖ·ÔÊÐíÇé¿öÏÂ£¬Çó¸ø¶¨Çø¼äµÄËØÊý*/
+/*æ±‚ç¼–å€å…è®¸æƒ…å†µä¸‹ï¼Œæ±‚ç»™å®šåŒºé—´çš„ç´ æ•°*/
 #include<stdio.h>
-#include<conio.h>		/*Óëgetch()ÓÐ¹Ø*/
+#include<conio.h>		/*ä¸Žgetch()æœ‰å…³*/
 #include<math.h>
 
 int main()
 {
-	/*±äÁ¿ÉùÃ÷²¿·Ö*/
+	/*å˜é‡å£°æ˜Žéƒ¨åˆ†*/
 	int a=0,b=0;
-	/*º¯ÊýÉùÃ÷²¿·Ö*/
+	/*å‡½æ•°å£°æ˜Žéƒ¨åˆ†*/
 	void PrimeNum1(int x,int y);
-	/*Êý¾ÝÊäÈë²¿·Ö*/
-	printf("ÇëÊäÈëËØÊýµÄÉ¸Ñ¡Çø¼ä:\n[a,b]=");
+	/*æ•°æ®è¾“å…¥éƒ¨åˆ†*/
+	printf("è¯·è¾“å…¥ç´ æ•°çš„ç­›é€‰åŒºé—´:\n[a,b]=");
 	scanf("%d,%d",&a,&b);
-	/*º¯Êýµ÷ÓÃ²¿·Ö*/
-	printf("\n·½·¨1.1:Á½²ãforÑ­»··¨\n");
+	/*å‡½æ•°è°ƒç”¨éƒ¨åˆ†*/
+	printf("\næ–¹æ³•1.1:ä¸¤å±‚forå¾ªçŽ¯æ³•\n");
 	PrimeNum1(a,b);printf("\n\n");
-	/*°´ÈÎÒâ¼ü¹Ø±ÕºÚ´°¿Ú*/
+	/*æŒ‰ä»»æ„é”®å…³é—­é»‘çª—å£*/
 	getch();
 	return 0;
 }
-/*½â·¨1.1:ÓÐÐ§µØÆ½·½Çó½â·¨¡ª¡ª"Á½²ãforÑ­»·"+"breakÌø³ö"*/
+/*è§£æ³•1.1:æœ‰æ•ˆåœ°å¹³æ–¹æ±‚è§£æ³•â€”â€”"ä¸¤å±‚forå¾ªçŽ¯"+"breakè·³å‡º"*/
 void PrimeNum1(int x,int y)
 {
 	int i=0,p=0; 
@@ -27,9 +27,9 @@ void PrimeNum1(int x,int y)
 	{ 
 		for(i=2;i<=sqrt(x);i++)
 			if(x%i==0) break; 
-		if(i>sqrt(x)&&(x!=1)){		/*µÈºÅ²»È¡£¬¼ÓÈëµÈºÅ»áÉ¸Ñ¡³ö1¡¢3¡¢5¡¢7¡¢11¡¢13¡¢17¡¢19...µÄÆ½·½
-									µÈ´íÎó´ð°¸£¬¶øÕâÐ©ÏÔÈ»²»ÊÇËØÊý¡£x!=1£¬ÊÇ¶Ô²Ù×÷ÈËÔ±´Ó1¿ªÊ¼È¡ÊýµÄÈÝ´í´¦Àí*/
-			printf("%4d ",x);		/*¶ÔÉ¸Ñ¡³öÀ´µÄËØÊý°´Ã¿ÐÐ8¸öÔªËØ´òÓ¡*/
+		if(i>sqrt(x)&&(x!=1)){		/*ç­‰å·ä¸å–ï¼ŒåŠ å…¥ç­‰å·ä¼šç­›é€‰å‡º1ã€3ã€5ã€7ã€11ã€13ã€17ã€19...çš„å¹³æ–¹
+									ç­‰é”™è¯¯ç­”æ¡ˆï¼Œè€Œè¿™äº›æ˜¾ç„¶ä¸æ˜¯ç´ æ•°ã€‚x!=1ï¼Œæ˜¯å¯¹æ“ä½œäººå‘˜ä»Ž1å¼€å§‹å–æ•°çš„å®¹é”™å¤„ç†*/
+			printf("%4d ",x);		/*å¯¹ç­›é€‰å‡ºæ¥çš„ç´ æ•°æŒ‰æ¯è¡Œ8ä¸ªå…ƒç´ æ‰“å°*/
 			if(++p%8==0)	printf("\n");
 		}
 	}

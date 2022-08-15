@@ -4,19 +4,19 @@ extern void fun10_3_1(){
 	FILE *fp;
 	char ch,filename[10];
 
-	printf("\n-ÕâÊÇ10.3.1ÔõÑùÏòÎÄ¼ş¶ÁĞ´×Ö·û--Àı10.1-\n");
+	printf("\n-è¿™æ˜¯10.3.1æ€æ ·å‘æ–‡ä»¶è¯»å†™å­—ç¬¦--ä¾‹10.1-\n");
 
 	
-	printf("ÇëÊäÈëÎÄ¼şÃû:");
+	printf("è¯·è¾“å…¥æ–‡ä»¶å:");
 	scanf("%s",filename);
 	if((fp=(fopen(filename,"wb")))==NULL)
 	{
-		printf("ÎÄ¼şÎ»ÖÃ´íÎó\n");
+		printf("æ–‡ä»¶ä½ç½®é”™è¯¯\n");
 		Back_10_3();
 	}
 
 	ch=getchar();
-	printf("ÇëÊäÈëÄÚÈİÒÔ#½áÊø:\n");
+	printf("è¯·è¾“å…¥å†…å®¹ä»¥#ç»“æŸ:\n");
 	while(ch!='#')
 	{
 		fputc(ch,fp);
@@ -32,22 +32,22 @@ extern void fun10_3_2(){
 	FILE *in,*out;
 	char ch,Infile[10],Outfile[10];
 
-	printf("\n-ÕâÊÇ10.3.1ÔõÑùÏòÎÄ¼ş¶ÁĞ´×Ö·û--Àı10.2-\n");
+	printf("\n-è¿™æ˜¯10.3.1æ€æ ·å‘æ–‡ä»¶è¯»å†™å­—ç¬¦--ä¾‹10.2-\n");
 
-	printf("ÊäÈë¶ÁÈëµÄÎÄ¼şÃû:");
+	printf("è¾“å…¥è¯»å…¥çš„æ–‡ä»¶å:");
 	scanf("%s",Infile);
-	printf("ÊäÈëĞ´ÈëµÄÎÄ¼şÃû:");
+	printf("è¾“å…¥å†™å…¥çš„æ–‡ä»¶å:");
 	scanf("%s",Outfile);
 
 	if((in=fopen(Infile,"r"))==NULL)
 	{
-		printf("ÎÄ¼ş²»´æÔÚ\n");
+		printf("æ–‡ä»¶ä¸å­˜åœ¨\n");
 		Back_10_3();
 	}
 
 	if((out=fopen(Outfile,"wb"))==NULL)
 	{
-		printf("ÎÄ¼şÎŞ·¨½¨Á¢\n");
+		printf("æ–‡ä»¶æ— æ³•å»ºç«‹\n");
 		Back_10_3();
 	}
 
@@ -68,9 +68,9 @@ extern void fun10_3_3(){
 	char str[n][10],temp[10];
 	int i=0,j,k;
 	scanf("%d",&i);
-	printf("\n-ÕâÊÇ10.3.2ÔõÑùÏòÎÄ¼ş¶ÁĞ´×Ö·û´®Àı10.3-\n");
+	printf("\n-è¿™æ˜¯10.3.2æ€æ ·å‘æ–‡ä»¶è¯»å†™å­—ç¬¦ä¸²ä¾‹10.3-\n");
 
-	printf("ÇëÊäÈë×Ö·û´®:\n");
+	printf("è¯·è¾“å…¥å­—ç¬¦ä¸²:\n");
 	for(i=0;i<n;i++)
 	{
 		printf("%d:  ",i);
@@ -94,10 +94,10 @@ extern void fun10_3_3(){
 	}
 	if((fp=fopen("10.3.3.txt","wb"))==NULL)
 	{
-		printf("ÎÄ¼ş´ò¿ª³ö´í\n");
+		printf("æ–‡ä»¶æ‰“å¼€å‡ºé”™\n");
 		Back_10_3();
 	}
-	printf("ÅÅĞòºóµÄ½á¹ûÎª:\n");
+	printf("æ’åºåçš„ç»“æœä¸º:\n");
 
 	for(i=0;i<n;i++)
 	{
@@ -116,11 +116,11 @@ extern void fun10_3_4(){
 	char str[n][10];
 	int i=0;
 
-	printf("\n-ÕâÊÇ10.3.2ÔõÑùÏòÎÄ¼ş¶ÁĞ´×Ö·û´®²âÊÔÀı-\n");
+	printf("\n-è¿™æ˜¯10.3.2æ€æ ·å‘æ–‡ä»¶è¯»å†™å­—ç¬¦ä¸²æµ‹è¯•ä¾‹-\n");
 
 	if((fp=fopen("10.3.3.txt","r"))==NULL)
 	{
-		printf("ÎÄ¼ş´ò¿ªÊ§°Ü\n");
+		printf("æ–‡ä»¶æ‰“å¼€å¤±è´¥\n");
 		Back_10_3();
 	}
 	while(fgets(str[i],10,fp)!=NULL)
@@ -138,13 +138,13 @@ void Save()
 	int i;
 	if((fp=fopen("10.3_stu.txt","wb"))==NULL)
 	{
-		printf("ÎÄ¼ş½¨Á¢Ê§°Ü\n");
+		printf("æ–‡ä»¶å»ºç«‹å¤±è´¥\n");
 		Back_10_3();
 	}
 	for(i=0;i<SIZE;++i)
 	{
 		if(fwrite(&stud[i],sizeof(struct Student_type),1,fp)!=1)
-			printf("ÎÄ¼şĞ´Èë³ö´í\n");
+			printf("æ–‡ä»¶å†™å…¥å‡ºé”™\n");
 	}
 	fclose(fp);
 }
@@ -154,7 +154,7 @@ void Open()
 	int i;
 	if((fp=fopen("10.3_stu.txt","rb"))==NULL)
 	{
-		printf("ÎÄ¼ş¶ÁÈ¡Ê§°Ü\n");
+		printf("æ–‡ä»¶è¯»å–å¤±è´¥\n");
 		Back_10_3();
 	}
 	for(i=0;i<SIZE;++i)
@@ -170,7 +170,7 @@ void Load()
 	FILE *fp;
 	if((fp=fopen("10.3_stu.txt","rb"))==NULL)
 	{
-		printf("ÎÄ¼ş²»´æÔÚ!\n");
+		printf("æ–‡ä»¶ä¸å­˜åœ¨!\n");
 		Back_10_3();
 	}
 	for(i=0;i<SIZE;++i)
@@ -182,7 +182,7 @@ void Load()
 				fclose(fp);
 				return ;
 			}
-			printf("ÎÄ¼ş¶ÁÈ¡´íÎó\n");
+			printf("æ–‡ä»¶è¯»å–é”™è¯¯\n");
 			Back_10_3();
 		}
 	}
@@ -190,23 +190,23 @@ void Load()
 }
 extern void fun10_3_5(){
 	int i;
-	printf("\n-ÕâÊÇ10.3.4ÓÃ¶ş½øÖÆµÄ·½Ê½¶ÁĞ´ÎÄ¼ş10.4-\n");
-	printf("ÇëÊäÈëÑ§ÉúĞÅÏ¢:\n");
+	printf("\n-è¿™æ˜¯10.3.4ç”¨äºŒè¿›åˆ¶çš„æ–¹å¼è¯»å†™æ–‡ä»¶10.4-\n");
+	printf("è¯·è¾“å…¥å­¦ç”Ÿä¿¡æ¯:\n");
 	for(i=0;i<SIZE;++i)
 		scanf("%s%d%d%s",stud[i].name,&stud[i].num,&stud[i].age,stud[i].addr);
 	Save();
 	Back_10_3();
 }
 extern void fun10_3_6(){
-	printf("\n-ÕâÊÇ10.3.4ÓÃ¶ş½øÖÆµÄ·½Ê½¶ÁĞ´ÎÄ¼ş²âÊÔ-\n");
+	printf("\n-è¿™æ˜¯10.3.4ç”¨äºŒè¿›åˆ¶çš„æ–¹å¼è¯»å†™æ–‡ä»¶æµ‹è¯•-\n");
 	Open();
 	Back_10_3();
 }
 extern void fun10_3_7(){
-	printf("\n-ÕâÊÇ10.3.4ÓÃ¶ş½øÖÆµÄ·½Ê½¶ÁĞ´ÎÄ¼ş¼ÓÔØ-\n");
+	printf("\n-è¿™æ˜¯10.3.4ç”¨äºŒè¿›åˆ¶çš„æ–¹å¼è¯»å†™æ–‡ä»¶åŠ è½½-\n");
 	Load();
 	Save();
-	printf("±£´æ³É¹¦,´ò¿ªÈçÏÂ:\n");
+	printf("ä¿å­˜æˆåŠŸ,æ‰“å¼€å¦‚ä¸‹:\n");
 	Open();
 	Back_10_3();
 }
@@ -219,7 +219,7 @@ extern void Back_10_3(){
 
 extern void fun10_4_1(){
 	FILE *fp1,*fp2;
-	printf("\n-----ÕâÊÇ10.4.1ÎÄ¼şÎ»ÖÃ±ê¼ÇµÄ¶¨Î»-----\n");
+	printf("\n-----è¿™æ˜¯10.4.1æ–‡ä»¶ä½ç½®æ ‡è®°çš„å®šä½-----\n");
 	fp1=fopen("10.1.5.txt","r");
 	fp2=fopen("10.3.2.txt","w");
 	while(!feof(fp1))
@@ -237,11 +237,11 @@ extern void fun10_4_2(){
 	int i;
 	FILE *fp;
 
-	printf("\n-----ÕâÊÇ10.4.2-----Ëæ»ú¶ÁĞ´----------\n");
+	printf("\n-----è¿™æ˜¯10.4.2-----éšæœºè¯»å†™----------\n");
 
 	if((fp=fopen("10.3_stu.txt","rb"))==NULL)
 	{
-		printf("ÎÄ¼ş´ò¿ªÊ§°Ü\n");
+		printf("æ–‡ä»¶æ‰“å¼€å¤±è´¥\n");
 		Back_10_4();
 	}
 	for(i=0;i<SIZE;i+=2)

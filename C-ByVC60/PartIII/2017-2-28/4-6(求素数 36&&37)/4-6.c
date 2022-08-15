@@ -17,7 +17,7 @@ int main()
 		}
 
 		if(i<n)		
-			printf("1-200内第%d\t个素数为%d\n",++w,n);		
+			printf("1-200鍐呯%d\t涓礌鏁颁负%d\n",++w,n);		
 		n=n+1;
 	}
 	return 0;

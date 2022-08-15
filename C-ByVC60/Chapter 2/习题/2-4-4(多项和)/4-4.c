@@ -1,4 +1,4 @@
-/*¼ÆËãÇ°1µ½100µÄºÍ*/
+/*è®¡ç®—å‰1åˆ°100çš„å’Œ*/
 
 #include<stdio.h>
 #include<conio.h>
@@ -7,7 +7,7 @@ int main()
 {
 	int sum=0,n=1,N=0;
 	//int x=1;
-	printf("ÇëÊäÈëÒª¼ÆËãµÄÇ°NÏîºÍ\nN=");
+	printf("è¯·è¾“å…¥è¦è®¡ç®—çš„å‰Né¡¹å’Œ\nN=");
 	scanf("%d",&N);
 	while(n<N)
 	{

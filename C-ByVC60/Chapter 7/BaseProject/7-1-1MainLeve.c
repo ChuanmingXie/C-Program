@@ -1,4 +1,4 @@
-/*»ù±¾Ëã·¨ºÍ·½³ÌÊ½Ëã·¨*/
+/*åŸºæœ¬ç®—æ³•å’Œæ–¹ç¨‹å¼ç®—æ³•*/
 #include<stdlib.h>
 #include<stdio.h>
 #include<conio.h>
@@ -18,24 +18,24 @@ void InputDou(double *x);
 int main()
 {
 	char No[10];
-	printf("--------1.¹«Ô¼ÊıÒÔ¼°¹«±¶Êı-------\n");
-	printf("--------2.ÅĞ¶ÏÄ³ÊıÊÇ·ñËØÊı-------\n");
-	printf("--------3.ÅÅĞòÖĞµÄÃ°ÅİËã·¨-------\n");
-	printf("--------4.¼ÆËãÄ³ÄêÖĞµÄÄ³Ìì-------\n");
+	printf("--------1.å…¬çº¦æ•°ä»¥åŠå…¬å€æ•°-------\n");
+	printf("--------2.åˆ¤æ–­æŸæ•°æ˜¯å¦ç´ æ•°-------\n");
+	printf("--------3.æ’åºä¸­çš„å†’æ³¡ç®—æ³•-------\n");
+	printf("--------4.è®¡ç®—æŸå¹´ä¸­çš„æŸå¤©-------\n");
 
-	printf("--------5.Ò»Ôª¶ş´Î·½³ÌÇó¸ù-------\n");
-	printf("--------6.Ò»ÔªÈı´Î·½³ÌÇó¸ù-------\n");
-	printf("--------7.µİ¹é·¢ÀÕÈÃµÂÇó½â-------\n");
+	printf("--------5.ä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹æ±‚æ ¹-------\n");
+	printf("--------6.ä¸€å…ƒä¸‰æ¬¡æ–¹ç¨‹æ±‚æ ¹-------\n");
+	printf("--------7.é€’å½’å‘å‹’è®©å¾·æ±‚è§£-------\n");
 	printf("--------------0.Exit-------------\n");
-	printf("ÇëÊäÈëÄãÒªÕ¹Ê¾µÄËã·¨ÏîÄ¿±àºÅNo=");
+	printf("è¯·è¾“å…¥ä½ è¦å±•ç¤ºçš„ç®—æ³•é¡¹ç›®ç¼–å·No=");
 	scanf("%s",No);
 	while(No[0]<'0'||No[0]>'7'){
-		printf("\nÄúµÄÊäÈëÓĞÎóÇëÈ·ÈÏºóÔÙÊäÈëNo=");
+		printf("\næ‚¨çš„è¾“å…¥æœ‰è¯¯è¯·ç¡®è®¤åå†è¾“å…¥No=");
 		scanf("%s",No);
 	}
 	switch(No[0])
 	{
-	case '0':if(getch())printf("\nÔÙ¼û!\n");break;
+	case '0':if(getch())printf("\nå†è§!\n");break;
 	case '1':Gnumber();break;
 	case '2':IsPrime();break;
 	case '3':Bullble();break;
@@ -56,7 +56,7 @@ void Clrscr()
 
 /*
 Input :a;
-Ouput :ËØÊı(Y/N)?
+Ouput :ç´ æ•°(Y/N)?
 */
 void IsPrime()
 {
@@ -64,21 +64,21 @@ void IsPrime()
 	int IsPrimefun(int a);
 	InputNum(&a);
 	if(IsPrimefun(a))
-		printf("¾­ÑéÖ¤:%d ÊÇËØÊı\n",a);
+		printf("ç»éªŒè¯:%d æ˜¯ç´ æ•°\n",a);
 	else
-		printf("¾­ÑéÖ¤:%d ²»ÊÇËØÊı\n",a);
+		printf("ç»éªŒè¯:%d ä¸æ˜¯ç´ æ•°\n",a);
 	Clrscr();
 }
 
 /*
 Input :a,b;
-Ouput :¹«Ô¼Êı:m,¹«±¶Êı:n.
+Ouput :å…¬çº¦æ•°:m,å…¬å€æ•°:n.
 */
 void Gnumber()
 {
 	int a,b;
 	void Gnumberfun(int p,int q);
-	printf("ÇëÊäÈëÁ½¸ö¼ÆËãÊı¾İ:\n");
+	printf("è¯·è¾“å…¥ä¸¤ä¸ªè®¡ç®—æ•°æ®:\n");
 	InputNum(&a);
 	InputNum(&b);
 	Gnumberfun(a,b);
@@ -86,18 +86,18 @@ void Gnumber()
 }
 
 /*
-Input :Ä³ÄêÄ³ÔÂÄ³ÈÕ(year,month,day;)
-Ouput :Îª¸ÃÄêµÚ¼¸Ìì(days;)
+Input :æŸå¹´æŸæœˆæŸæ—¥(year,month,day;)
+Ouput :ä¸ºè¯¥å¹´ç¬¬å‡ å¤©(days;)
 */
 void Yearday()
 {
 	int a,b,c;
 	int YerTurnDay(int year,int month,int day);
-	printf("ÇëÒÀ´ÎÊäÈëÄê¡¢ÔÂ¡¢ÈÕ:\n");
+	printf("è¯·ä¾æ¬¡è¾“å…¥å¹´ã€æœˆã€æ—¥:\n");
 	InputNum(&a);
 	InputNum(&b);
 	InputNum(&c);
-	printf("%d/%d/%d ÊÇÕâÒ»ÄêµÄµÚ%dÌì\n",a,b,c,YerTurnDay(a,b,c));
+	printf("%d/%d/%d æ˜¯è¿™ä¸€å¹´çš„ç¬¬%då¤©\n",a,b,c,YerTurnDay(a,b,c));
 	Clrscr();
 }
 
@@ -119,7 +119,7 @@ void Bullble()
 
 /*
 Input :a,b,c;
-ÖĞ¼ä²½Öè:disc,p,q;
+ä¸­é—´æ­¥éª¤:disc,p,q;
 Ouput :x1,x2;
 */
 void Secondt()
@@ -129,12 +129,12 @@ void Secondt()
 	void GreaerTZero(double a,double b,double d,double *x1,double *x2);
 	void EqualToZero(double,double,double,double *x1,double *x2);
 	void SmallerZero(double,double,double,double *p,double *q);
-	printf("ÇëÒÀ´ÎÊäÈëÏµÊıa,b,c:\n");
+	printf("è¯·ä¾æ¬¡è¾“å…¥ç³»æ•°a,b,c:\n");
 	InputDou(&a1);
 	InputDou(&b1);
 	InputDou(&c1);
 	Discfun(a1,b1,c1,&disc);
-	printf("·½³ÌÊ½:%.2lf*x*x+%.2lf*x+%.2lf=0\n·½³Ì½â:",a1,b1,c1);
+	printf("æ–¹ç¨‹å¼:%.2lf*x*x+%.2lf*x+%.2lf=0\næ–¹ç¨‹è§£:",a1,b1,c1);
 	if(disc>0)
 	{
 		GreaerTZero(a1,b1,disc,&x1,&x2);
@@ -154,29 +154,29 @@ void Secondt()
 }
 
 /*
-µü´ú·¨
+è¿­ä»£æ³•
 */
 void ThreeTm()
 {
 	double a1,b1,c1,d1;
 	double ThreeTmfun(double a,double b,double c,double d);
-	printf("ÇëÒÀ´ÎÊäÈëÏµÊıa,b,c,d:\n");
+	printf("è¯·ä¾æ¬¡è¾“å…¥ç³»æ•°a,b,c,d:\n");
 	InputDou(&a1);
 	InputDou(&b1);
 	InputDou(&c1);
 	InputDou(&d1);
-	printf("·½³ÌÊ½:%.2lf*x^3+%.2lf*x^2+%.2lf*x+%.2lf=0\n·½³Ì½â:x=%.8lf",a1,b1,c1,d1,ThreeTmfun(a1,b1,c1,d1));
+	printf("æ–¹ç¨‹å¼:%.2lf*x^3+%.2lf*x^2+%.2lf*x+%.2lf=0\næ–¹ç¨‹è§£:x=%.8lf",a1,b1,c1,d1,ThreeTmfun(a1,b1,c1,d1));
 	Clrscr();
 }
 
 /*
-µİ¹éÊ½
+é€’å½’å¼
 */
 void LRDslov()
 {
 	int x,n;
 	double LRDslovfun(int ,int);
-	printf("ÇëÒÀ´ÎÊäÈë²ÎÊın,x:\n");
+	printf("è¯·ä¾æ¬¡è¾“å…¥å‚æ•°n,x:\n");
 	InputNum(&n);
 	InputNum(&x);
 	printf("p%d(%d)=%6.2lf\n",n,x,LRDslovfun(n,x));

@@ -1,4 +1,4 @@
-/*Çó×î´ó¹«Ô¼Êı*/
+/*æ±‚æœ€å¤§å…¬çº¦æ•°*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
@@ -7,8 +7,8 @@ int main()
 {
 	int m=0,n=0;
 	int ComputNum(int x,int y);
-	printf("ÇëÊäÈëÊı¾İ:[m,n]=");scanf("%d,%d",&m,&n);
-	printf("\n×î´ó¹«Ô¼Êı:[%d,%d]=%d\n\n",m,n,ComputNum(m,n));
+	printf("è¯·è¾“å…¥æ•°æ®:[m,n]=");scanf("%d,%d",&m,&n);
+	printf("\næœ€å¤§å…¬çº¦æ•°:[%d,%d]=%d\n\n",m,n,ComputNum(m,n));
 	getch();
 	return 0;
 }

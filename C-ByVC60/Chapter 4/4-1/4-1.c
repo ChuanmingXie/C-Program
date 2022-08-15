@@ -1,4 +1,4 @@
-/*±È½Ï´óĞ¡ÓëÌØÊâ¼ÆËã*/
+/*æ¯”è¾ƒå¤§å°ä¸ç‰¹æ®Šè®¡ç®—*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
@@ -6,25 +6,25 @@
 #define N 10
 #define M 1000
 
-void Maxfun1();		/*if...else...Êä³öÈı¸öÊı×î´óÖµ*/
-void Maxfun2();		/*Ìõ¼ş±í´ïÊ½·¨Êä³öÈıÊıÖĞ×î´óÖµ*/
-void Sortfun1();	/*if...else...Êä³öËÄÊıÉıĞòÅÅÁĞ*/
-void Sortfun2();	/*ÀûÓÃÊı×é½øĞĞ´¦ÀíËÄÊıÉıĞòÅÅÁĞ*/
-void Spaclfun1();	/*¶Ô¿ªÆ½·½¼ÆËãµÄÌØÊâ¼ÆËã*/
-void Spaclfun2();	/*¶ÔÎåÎ»ÒÔÄÚµÄÊıÌØÊâ´¦Àí*/
-void Spaclfun3();	/*Êµ¼ÊÎÊÌâ´¦ÀíµÄÊıÑ§´¦Àí*/
+void Maxfun1();		/*if...else...è¾“å‡ºä¸‰ä¸ªæ•°æœ€å¤§å€¼*/
+void Maxfun2();		/*æ¡ä»¶è¡¨è¾¾å¼æ³•è¾“å‡ºä¸‰æ•°ä¸­æœ€å¤§å€¼*/
+void Sortfun1();	/*if...else...è¾“å‡ºå››æ•°å‡åºæ’åˆ—*/
+void Sortfun2();	/*åˆ©ç”¨æ•°ç»„è¿›è¡Œå¤„ç†å››æ•°å‡åºæ’åˆ—*/
+void Spaclfun1();	/*å¯¹å¼€å¹³æ–¹è®¡ç®—çš„ç‰¹æ®Šè®¡ç®—*/
+void Spaclfun2();	/*å¯¹äº”ä½ä»¥å†…çš„æ•°ç‰¹æ®Šå¤„ç†*/
+void Spaclfun3();	/*å®é™…é—®é¢˜å¤„ç†çš„æ•°å­¦å¤„ç†*/
 int main()
 {
 	int No=0;
 	printf("\n");
-	printf("----------1.if...else...Êä³öÈı¸öÊı×î´óÖµ---------\n");
-	printf("----------2.Ìõ¼ş±í´ïÊ½·¨Êä³öÈıÊıÖĞ×î´óÖµ---------\n");
-	printf("----------3.if...else...Êä³öËÄÊıÉıĞòĞòÁĞ---------\n");
-	printf("----------4.ÀûÓÃÊı×é½øĞĞ´¦Àí¶àÊıÉıĞòÅÅÁĞ---------\n");
-	printf("----------5.¶Ô¿ªÆ½·½¼ÆËãµÄÌØÊâ¼ÆËã---------------\n");
-	printf("----------6.¶ÔÎåÎ»ÒÔÄÚµÄÊıÌØÊâ´¦Àí---------------\n");
-	printf("----------7.Êµ¼ÊÎÊÌâ´¦ÀíµÄÊıÑ§´¦Àí---------------\n");
-	printf("ÇëÊäÈëÒª½øĞĞµÄÕ¹Ê¾Ëã·¨µÄÏîÄ¿±àºÅ:No=");
+	printf("----------1.if...else...è¾“å‡ºä¸‰ä¸ªæ•°æœ€å¤§å€¼---------\n");
+	printf("----------2.æ¡ä»¶è¡¨è¾¾å¼æ³•è¾“å‡ºä¸‰æ•°ä¸­æœ€å¤§å€¼---------\n");
+	printf("----------3.if...else...è¾“å‡ºå››æ•°å‡åºåºåˆ—---------\n");
+	printf("----------4.åˆ©ç”¨æ•°ç»„è¿›è¡Œå¤„ç†å¤šæ•°å‡åºæ’åˆ—---------\n");
+	printf("----------5.å¯¹å¼€å¹³æ–¹è®¡ç®—çš„ç‰¹æ®Šè®¡ç®—---------------\n");
+	printf("----------6.å¯¹äº”ä½ä»¥å†…çš„æ•°ç‰¹æ®Šå¤„ç†---------------\n");
+	printf("----------7.å®é™…é—®é¢˜å¤„ç†çš„æ•°å­¦å¤„ç†---------------\n");
+	printf("è¯·è¾“å…¥è¦è¿›è¡Œçš„å±•ç¤ºç®—æ³•çš„é¡¹ç›®ç¼–å·:No=");
 	scanf("%d",&No);
 	switch(No){
 		case 1:Maxfun1();break;
@@ -39,10 +39,10 @@ int main()
 	getch();
 	return 0;
 }
-void Maxfun1()		/*if...else...Êä³öÈı¸öÊı×î´óÖµ*/
+void Maxfun1()		/*if...else...è¾“å‡ºä¸‰ä¸ªæ•°æœ€å¤§å€¼*/
 {
 	int a,b,c;
-	printf("ÇëÊäÈëÈı¸öÊıa,b,c=");scanf("\n%d,%d,%d",&a,&b,&c);
+	printf("è¯·è¾“å…¥ä¸‰ä¸ªæ•°a,b,c=");scanf("\n%d,%d,%d",&a,&b,&c);
 	if(a<c){
 		if(b<c) printf("Max is %d\n\n",c);
 		else printf("Max is %d\n\n",b);
@@ -53,67 +53,67 @@ void Maxfun1()		/*if...else...Êä³öÈı¸öÊı×î´óÖµ*/
 	}
 	main();
 }
-void Maxfun2()		/*Ìõ¼ş±í´ïÊ½·¨Êä³öÈıÊıÖĞ×î´óÖµ*/
+void Maxfun2()		/*æ¡ä»¶è¡¨è¾¾å¼æ³•è¾“å‡ºä¸‰æ•°ä¸­æœ€å¤§å€¼*/
 {
 	int a,b,c;
-	printf("ÇëÊäÈëÈı¸öÊıa,b,c=");scanf("\n%d,%d,%d",&a,&b,&c);
+	printf("è¯·è¾“å…¥ä¸‰ä¸ªæ•°a,b,c=");scanf("\n%d,%d,%d",&a,&b,&c);
 	printf("Max is %d\n\n",(((a>b)?a:b)>c)?((a>b)?a:b):c);
 	main();
 }
-void Sortfun1()		/*if...else...Êä³öËÄÊıÉıĞòÅÅÁĞ*/
+void Sortfun1()		/*if...else...è¾“å‡ºå››æ•°å‡åºæ’åˆ—*/
 {
 	int a,b,c,d,t;
-	printf("ÇëÊäÈëËÄ¸öÊı:a,b,c,d=");scanf("\n%d,%d,%d,%d",&a,&b,&c,&d);
-	printf("³õÊ¼ĞòÁĞÎª:a=%d,b=%d,c=%d,d=%d\n",a,b,c,d);
+	printf("è¯·è¾“å…¥å››ä¸ªæ•°:a,b,c,d=");scanf("\n%d,%d,%d,%d",&a,&b,&c,&d);
+	printf("åˆå§‹åºåˆ—ä¸º:a=%d,b=%d,c=%d,d=%d\n",a,b,c,d);
 	if(a>b){t=a,a=b,b=t;}
 	if(a>c){t=a,a=c,c=t;}
 	if(a>d){t=a,a=d,d=t;}
 	if(b>c){t=b,b=c,c=t;}
 	if(b>d){t=b,b=d,d=t;}
 	if(c>d){t=c,c=d,d=t;}
-	printf("ÉıĞòĞòÁĞÎª:%d\t%d\t%d\t%d\n\n",a,b,c,d);
+	printf("å‡åºåºåˆ—ä¸º:%d\t%d\t%d\t%d\n\n",a,b,c,d);
 	main();
 }
-void Sortfun2()		/*ÀûÓÃÊı×é½øĞĞ´¦Àí¶àÊıÉıĞòÅÅÁĞ*/
+void Sortfun2()		/*åˆ©ç”¨æ•°ç»„è¿›è¡Œå¤„ç†å¤šæ•°å‡åºæ’åˆ—*/
 {
 	int a[N],i=0;
 	void QuickSort(int R[],int low,int high);
 	void BubbleSort(int R[],int n);
 	void InsertSort(int R[],int n);
 	void SelectSort(int R[],int n);
-	/*1.¿ìËÙÅÅĞò*/
-	printf("ÇëÊäÈë10¸öÊı:");scanf("\n");
+	/*1.å¿«é€Ÿæ’åº*/
+	printf("è¯·è¾“å…¥10ä¸ªæ•°:");scanf("\n");
 	for(i=0;i<10;++i)
 		scanf("%d",&a[i]);
 	QuickSort(a,0,N);
-	printf("¿ìËÙÅÅĞòÉıĞòĞòÁĞÎª: ");
+	printf("å¿«é€Ÿæ’åºå‡åºåºåˆ—ä¸º: ");
 	for(i=0;i<10;++i)
 		printf("%d ",a[i]);
 	printf("\n");
-	/*2.²åÈëÅÅĞò*/
-	printf("ÇëÊäÈë10¸öÊı:");
+	/*2.æ’å…¥æ’åº*/
+	printf("è¯·è¾“å…¥10ä¸ªæ•°:");
 	for(i=0;i<10;++i)
 		scanf("%d",&a[i]);
 	InsertSort(a,N);
-	printf("²åÈëÅÅĞòÉıĞòĞòÁĞÎª: ");
+	printf("æ’å…¥æ’åºå‡åºåºåˆ—ä¸º: ");
 	for(i=0;i<10;++i)
 		printf("%d ",a[i]);
 	printf("\n");
-	/*3.Ñ¡ÔñÅÅĞò*/
-	printf("ÇëÊäÈë10¸öÊı:");
+	/*3.é€‰æ‹©æ’åº*/
+	printf("è¯·è¾“å…¥10ä¸ªæ•°:");
 	for(i=0;i<10;++i)
 		scanf("%d",&a[i]);
 	SelectSort(a,N);
-	printf("Ñ¡ÔñÅÅĞòÉıĞòĞòÁĞÎª: ");
+	printf("é€‰æ‹©æ’åºå‡åºåºåˆ—ä¸º: ");
 	for(i=0;i<10;++i)
 		printf("%d ",a[i]);
 	printf("\n");
-	/*4.ÆğÅİÅÅĞò*/
-	printf("ÇëÊäÈë10¸öÊı:");
+	/*4.èµ·æ³¡æ’åº*/
+	printf("è¯·è¾“å…¥10ä¸ªæ•°:");
 	for(i=0;i<10;++i)
 		scanf("%d",&a[i]);
 	BubbleSort(a,N);
-	printf("ÆğÅİÅÅĞòÉıĞòĞòÁĞÎª: ");
+	printf("èµ·æ³¡æ’åºå‡åºåºåˆ—ä¸º: ");
 	for(i=0;i<10;++i)
 		printf("%d ",a[i]);
 	printf("\n\n");
@@ -173,20 +173,20 @@ void BubbleSort(int R[],int n)
 	}
 }
 
-void Spaclfun1()	/*¶Ô¿ªÆ½·½¼ÆËãµÄÌØÊâ¼ÆËã*/
+void Spaclfun1()	/*å¯¹å¼€å¹³æ–¹è®¡ç®—çš„ç‰¹æ®Šè®¡ç®—*/
 {
 	int i;
-	printf("ÇëÊäÈëÒ»¸öĞ¡ÓÚ%dµÄÊı¾İ:",M);scanf("\n%d",&i);
+	printf("è¯·è¾“å…¥ä¸€ä¸ªå°äº%dçš„æ•°æ®:",M);scanf("\n%d",&i);
 	while(i>M){
-		printf("ÄúÊäÈëµÄÊı¾İÓĞÎó£¬´ÓÖØĞÂÊäÈë:");scanf("%d",&i);
+		printf("æ‚¨è¾“å…¥çš„æ•°æ®æœ‰è¯¯ï¼Œä»é‡æ–°è¾“å…¥:");scanf("%d",&i);
 	}
-	printf("Êı¾İ %d Æ½·½¸ùµÄÕûÊı²¿·ÖÎª:%d\n\n",i,(int)sqrt(i));
+	printf("æ•°æ® %d å¹³æ–¹æ ¹çš„æ•´æ•°éƒ¨åˆ†ä¸º:%d\n\n",i,(int)sqrt(i));
 	main();
 }
-void Spaclfun2()	/*¶ÔÎåÎ»ÒÔÄÚµÄÊıÌØÊâ´¦Àí*/
+void Spaclfun2()	/*å¯¹äº”ä½ä»¥å†…çš„æ•°ç‰¹æ®Šå¤„ç†*/
 {
 	int Num,Indiv,Ten,Hundred,Thousand,TenThou,p;
-	printf("ÇëÊäÈëÒ»¸öÎåÎ»ÒÔÄÚµÄÕûÊı:M=");scanf("\n%d",&Num);
+	printf("è¯·è¾“å…¥ä¸€ä¸ªäº”ä½ä»¥å†…çš„æ•´æ•°:M=");scanf("\n%d",&Num);
 	if(Num>9999) p=5;
 	else if(Num>999) p=4;
 	else if(Num>99)  p=3;
@@ -197,35 +197,35 @@ void Spaclfun2()	/*¶ÔÎåÎ»ÒÔÄÚµÄÊıÌØÊâ´¦Àí*/
 	Hundred=(Num%1000-Num%100)/100;
 	Thousand=(Num%10000-Num%1000)/1000;
 	TenThou=Num/10000;
-	printf("\nÎ»ÊıÎª:%d\n",p);
+	printf("\nä½æ•°ä¸º:%d\n",p);
 	switch(p)
 	{
-		case 5:printf("Ã¿Î»Êı×ÖÎª:%d,%d,%d,%d,%d\n",TenThou,Thousand,Hundred,Ten,Indiv);
-			   printf("·´ĞòĞòÁĞÎª:%d,%d,%d,%d,%d\n",Indiv,Ten,Hundred,Thousand,TenThou);break;
-		case 4:printf("Ã¿Î»Êı×ÖÎª:%d,%d,%d,%d\n",Thousand,Hundred,Ten,Indiv);
-			   printf("·´ĞòĞòÁĞÎª:%d,%d,%d,%d\n",Indiv,Ten,Hundred,Thousand);break;
-		case 3:printf("Ã¿Î»Êı×ÖÎª:%d,%d,%d\n",Hundred,Ten,Indiv);
-			   printf("·´ĞòĞòÁĞÎª:%d,%d,%d\n",Indiv,Ten,Hundred);break;
-		case 2:printf("Ã¿Î»Êı×ÖÎª:%d,%d\n",Ten,Indiv);
-			   printf("·´ĞòĞòÁĞÎª:%d,%d\n",Indiv,Ten);break;
-		case 1:printf("Ã¿Î»Êı×ÖÎª:%d\n",Indiv);
-			   printf("·´ĞòĞòÁĞÎª:%d\n",Indiv);break;
+		case 5:printf("æ¯ä½æ•°å­—ä¸º:%d,%d,%d,%d,%d\n",TenThou,Thousand,Hundred,Ten,Indiv);
+			   printf("ååºåºåˆ—ä¸º:%d,%d,%d,%d,%d\n",Indiv,Ten,Hundred,Thousand,TenThou);break;
+		case 4:printf("æ¯ä½æ•°å­—ä¸º:%d,%d,%d,%d\n",Thousand,Hundred,Ten,Indiv);
+			   printf("ååºåºåˆ—ä¸º:%d,%d,%d,%d\n",Indiv,Ten,Hundred,Thousand);break;
+		case 3:printf("æ¯ä½æ•°å­—ä¸º:%d,%d,%d\n",Hundred,Ten,Indiv);
+			   printf("ååºåºåˆ—ä¸º:%d,%d,%d\n",Indiv,Ten,Hundred);break;
+		case 2:printf("æ¯ä½æ•°å­—ä¸º:%d,%d\n",Ten,Indiv);
+			   printf("ååºåºåˆ—ä¸º:%d,%d\n",Indiv,Ten);break;
+		case 1:printf("æ¯ä½æ•°å­—ä¸º:%d\n",Indiv);
+			   printf("ååºåºåˆ—ä¸º:%d\n",Indiv);break;
 	}
 	printf("\n\n");
 	main();
 }
 
-void Spaclfun3()	/*Êµ¼ÊÎÊÌâ´¦ÀíµÄÊıÑ§´¦Àí*/
+void Spaclfun3()	/*å®é™…é—®é¢˜å¤„ç†çš„æ•°å­¦å¤„ç†*/
 {
 	int h=10;
 	double x1=2,y1=2,x2=-2,y2=2,x3=-2,y3=-2,x4=2,y4=-2,x,y,d1,d2,d3,d4;
-	printf("ÇëÊäÈëÄ³µã×ø±ê,¶ººÅ¸ô¿ª(x,y)=");
+	printf("è¯·è¾“å…¥æŸç‚¹åæ ‡,é€—å·éš”å¼€(x,y)=");
 	scanf("\n%lf,%lf",&x,&y);
 	d1=(x-x1)*(x-x1)+(y-y1)*(y-y1);
 	d2=(x-x2)*(x-x2)+(y-y2)*(y-y2);
 	d3=(x-x3)*(x-x3)+(y-y3)*(y-y3);
 	d4=(x-x4)*(x-x4)+(y-y4)*(y-y4);
 	if(d1>1&&d2>1&&d3>1&&d4>1) h=0;
-	printf("´Ëµã´¦µÄ¸ß¶ÈÎª: %d m\n\n",h);
+	printf("æ­¤ç‚¹å¤„çš„é«˜åº¦ä¸º: %d m\n\n",h);
 	main();
 }

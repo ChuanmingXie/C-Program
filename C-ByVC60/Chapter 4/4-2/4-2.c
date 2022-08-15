@@ -1,27 +1,27 @@
-/*·Ö¶Îº¯ÊıÓëµÈ¼¶»®·Ö*/
+/*åˆ†æ®µå‡½æ•°ä¸ç­‰çº§åˆ’åˆ†*/
 #include<stdlib.h>
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
 
-void DrivseFun();/*Ò»°ã·Ö¶Îº¯ÊıµÄif...else...´¦Àí·½·¨*/
-void AboutIfel();/*¶ÔÓÚ·Ö¶Îº¯ÊıµÄif...else...Åä¶Ô²âÊÔ*/
-void WorkMoney();/*Ô±¹¤½±½ğ·ÖºìµÄif...else...´¦Àí°ì·¨*/
-void Workmoney();/*Ô±¹¤½±½ğ·ÖºìµÄswitch...case...·½·¨*/
-void studentDe();/*Ñ§ÉúµÈ¼¶»®·ÖµÄswitch...case...·½·¨*/
+void DrivseFun();/*ä¸€èˆ¬åˆ†æ®µå‡½æ•°çš„if...else...å¤„ç†æ–¹æ³•*/
+void AboutIfel();/*å¯¹äºåˆ†æ®µå‡½æ•°çš„if...else...é…å¯¹æµ‹è¯•*/
+void WorkMoney();/*å‘˜å·¥å¥–é‡‘åˆ†çº¢çš„if...else...å¤„ç†åŠæ³•*/
+void Workmoney();/*å‘˜å·¥å¥–é‡‘åˆ†çº¢çš„switch...case...æ–¹æ³•*/
+void studentDe();/*å­¦ç”Ÿç­‰çº§åˆ’åˆ†çš„switch...case...æ–¹æ³•*/
 
 int main()
 {
 	int No;
-	printf("\n--------------1.Ò»°ã·Ö¶Îº¯ÊıµÄif...else...´¦Àí·½·¨--------------\n");
-	printf("--------------2.¶ÔÓÚ·Ö¶Îº¯ÊıµÄif...else...Åä¶Ô²âÊÔ--------------\n");
-	printf("--------------3.Ô±¹¤½±½ğ·ÖºìµÄif...else...´¦Àí°ì·¨--------------\n");
-	printf("--------------4.Ô±¹¤½±½ğ·ÖºìµÄswitch...case...·½·¨--------------\n");
-	printf("--------------5.Ñ§ÉúµÈ¼¶»®·ÖµÄswitch...case...·½·¨--------------\n");
-	printf("ÇëÊäÈëÒª½øĞĞËã·¨Õ¹Ê¾µÄÏîÄ¿±àºÅNo=");scanf("%d",&No);
+	printf("\n--------------1.ä¸€èˆ¬åˆ†æ®µå‡½æ•°çš„if...else...å¤„ç†æ–¹æ³•--------------\n");
+	printf("--------------2.å¯¹äºåˆ†æ®µå‡½æ•°çš„if...else...é…å¯¹æµ‹è¯•--------------\n");
+	printf("--------------3.å‘˜å·¥å¥–é‡‘åˆ†çº¢çš„if...else...å¤„ç†åŠæ³•--------------\n");
+	printf("--------------4.å‘˜å·¥å¥–é‡‘åˆ†çº¢çš„switch...case...æ–¹æ³•--------------\n");
+	printf("--------------5.å­¦ç”Ÿç­‰çº§åˆ’åˆ†çš„switch...case...æ–¹æ³•--------------\n");
+	printf("è¯·è¾“å…¥è¦è¿›è¡Œç®—æ³•å±•ç¤ºçš„é¡¹ç›®ç¼–å·No=");scanf("%d",&No);
 	while(No>5||No<=0)
 	{
-		printf("ÄúµÄÊäÈëÓĞÎó£¬Çë´ÓĞÂÊäÈë:No=");scanf("%d",&No);
+		printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯ï¼Œè¯·ä»æ–°è¾“å…¥:No=");scanf("%d",&No);
 	}
 	switch(No){
 	case 1:DrivseFun();break;
@@ -33,19 +33,19 @@ int main()
 	getch();
 	return 0;
 }
-void DrivseFun()/*Ò»°ã·Ö¶Îº¯ÊıµÄif...else...´¦Àí·½·¨*/
+void DrivseFun()/*ä¸€èˆ¬åˆ†æ®µå‡½æ•°çš„if...else...å¤„ç†æ–¹æ³•*/
 {
 	int x;
-	printf("ÇëÊäÈë×Ô±äÁ¿Öµ:x=");scanf("\n%d",&x);
+	printf("è¯·è¾“å…¥è‡ªå˜é‡å€¼:x=");scanf("\n%d",&x);
 	if(x<1) printf("y=x=%d (x<1)\n\n",x);
 	else if(x<10) printf("y=2*x-1=%d (1<=x<10)\n\n",2*x-1);
 	else printf("y=3*x-11=%d (x>=10)\n\n",3*x-11);
 	main();
 }
-void AboutIfel()/*¶ÔÓÚ·Ö¶Îº¯ÊıµÄif...else...Åä¶Ô²âÊÔ*/
+void AboutIfel()/*å¯¹äºåˆ†æ®µå‡½æ•°çš„if...else...é…å¯¹æµ‹è¯•*/
 {
 	int x,y=-1;
-	printf("ÇëÊäÈë×Ô±äÁ¿µÄÖµ:x=");scanf("\n%d",&x);
+	printf("è¯·è¾“å…¥è‡ªå˜é‡çš„å€¼:x=");scanf("\n%d",&x);
 	/*if(x>0) printf("y=1\n\n");
 	else if(x=0) printf("y=0\n\n");
 	else printf("y=-1\n\n");*/
@@ -56,10 +56,10 @@ void AboutIfel()/*¶ÔÓÚ·Ö¶Îº¯ÊıµÄif...else...Åä¶Ô²âÊÔ*/
 	printf("x=%d,y=%d\n\n",x,y);
 	main();
 }
-void WorkMoney()/*Ô±¹¤½±½ğ·ÖºìµÄif...else...´¦Àí°ì·¨*/
+void WorkMoney()/*å‘˜å·¥å¥–é‡‘åˆ†çº¢çš„if...else...å¤„ç†åŠæ³•*/
 {
 	double bonus,bon1,bon2,bon4,bon6,bon10,fin;
-	printf("ÇëÊäÈëÆóÒµËù»ñÀûÈó:");scanf("\n%lf",&fin);
+	printf("è¯·è¾“å…¥ä¼ä¸šæ‰€è·åˆ©æ¶¦:");scanf("\n%lf",&fin);
 	bon1=100000*0.1;
 	bon2=bon1+100000*0.075;
 	bon4=bon2+200000*0.05;
@@ -71,14 +71,14 @@ void WorkMoney()/*Ô±¹¤½±½ğ·ÖºìµÄif...else...´¦Àí°ì·¨*/
 	else if(fin<=600000) bonus=bon4+(fin-400000)*0.03;
 	else if(fin<=1000000) bonus=bon6+(fin-600000)*0.015;
 	else bonus=bon10+(fin-1000000)*0.01;
-	printf("Ô±¹¤»ñµÃµÄ·ÖºìÎª:%10.3lf\n\n",bonus);
+	printf("å‘˜å·¥è·å¾—çš„åˆ†çº¢ä¸º:%10.3lf\n\n",bonus);
 	main();
 }
-void Workmoney()/*Ô±¹¤½±½ğ·ÖºìµÄswitch...case...·½·¨*/
+void Workmoney()/*å‘˜å·¥å¥–é‡‘åˆ†çº¢çš„switch...case...æ–¹æ³•*/
 {
 	int Branch;
 	double bonus,bon1,bon2,bon4,bon6,bon10,fin;
-	printf("ÇëÊäÈëÆóÒµËù»ñÀûÈó:");scanf("\n%lf",&fin);
+	printf("è¯·è¾“å…¥ä¼ä¸šæ‰€è·åˆ©æ¶¦:");scanf("\n%lf",&fin);
 	bon1=100000*0.1;
 	bon2=bon1+100000*0.075;
 	bon4=bon2+200000*0.05;
@@ -98,17 +98,17 @@ void Workmoney()/*Ô±¹¤½±½ğ·ÖºìµÄswitch...case...·½·¨*/
 	case 1:bonus=bon1+(fin-100000)*0.075;break;
 	case 0:bonus=fin*0.1;break;
 	}
-	printf("Ô±¹¤»ñµÃµÄ·ÖºìÎª:%10.3lf\n\n",bonus);
+	printf("å‘˜å·¥è·å¾—çš„åˆ†çº¢ä¸º:%10.3lf\n\n",bonus);
 	main();
 }
-void studentDe()/*Ñ§ÉúµÈ¼¶»®·ÖµÄswitch...case...·½·¨*/
+void studentDe()/*å­¦ç”Ÿç­‰çº§åˆ’åˆ†çš„switch...case...æ–¹æ³•*/
 {
 	char garde;
 	double score;
-	printf("ÇëÊäÈëÑ§ÉúµÄ·ÖÊı:score=");scanf("\n%lf",&score);
+	printf("è¯·è¾“å…¥å­¦ç”Ÿçš„åˆ†æ•°:score=");scanf("\n%lf",&score);
 	while(score>100||score<0)
 	{
-		printf("ÄúµÄÊäÈëÓĞÎó£¬Çë´ÓĞÂÊäÈë:score=");scanf("%lf",&score);
+		printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯ï¼Œè¯·ä»æ–°è¾“å…¥:score=");scanf("%lf",&score);
 	}
 	switch((int)(score/10))
 	{
@@ -124,6 +124,6 @@ void studentDe()/*Ñ§ÉúµÈ¼¶»®·ÖµÄswitch...case...·½·¨*/
 	case 1:
 	case 0:garde='E';break;
 	}
-	printf("³É¼¨Îª%5.1lfµÄÑ§ÉúÎªµÈ¼¶%c\n\n",score,garde);
+	printf("æˆç»©ä¸º%5.1lfçš„å­¦ç”Ÿä¸ºç­‰çº§%c\n\n",score,garde);
 	main();
 }

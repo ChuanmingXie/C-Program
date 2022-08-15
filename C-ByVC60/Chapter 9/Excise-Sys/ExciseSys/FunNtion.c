@@ -11,9 +11,9 @@ void Fun1_DeSrct()
 	int i,days=0;
 	int Day_Tab[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 
-	printf("-------01.½á¹¹ÌåÈÕÆÚ¶¨ÒåÓ¦ÓÃ-------\n");
+	printf("-------01.ç»“æ„ä½“æ—¥æœŸå®šä¹‰åº”ç”¨-------\n");
 	
-	printf("ÇëÊäÈëÄê¡¢ÔÂ¡¢ÈÕ:\n");
+	printf("è¯·è¾“å…¥å¹´ã€æœˆã€æ—¥:\n");
 	scanf("%d %d %d",&data.Year,&data.Month,&data.Day);
 
 	for(i=0;i<data.Month;++i)
@@ -25,17 +25,17 @@ void Fun1_DeSrct()
 	if((data.Year%4==0&&data.Year%100!=0||data.Year%400==0)&&data.Month>=3)
 		days=days+1;
 
-	printf("¾­¹ı¼ÆËã¿ÉÖª:\n%d/%dÈÕ,ÊÇ%dÄêµÄµÚ%dÌì\n",data.Month,data.Day,data.Year,days);
+	printf("ç»è¿‡è®¡ç®—å¯çŸ¥:\n%d/%dæ—¥,æ˜¯%då¹´çš„ç¬¬%då¤©\n",data.Month,data.Day,data.Year,days);
 
 	Back_M();
 }
 void Fun2_UsSrct()
 {
 	int DayCount(struct data Data);
-	printf("-------02.½á¹¹Ìå×÷Îªº¯Êı²ÎÊı-------\n");
-	printf("ÇëÊäÈëÄê¡¢ÔÂ¡¢ÈÕ:\n");
+	printf("-------02.ç»“æ„ä½“ä½œä¸ºå‡½æ•°å‚æ•°-------\n");
+	printf("è¯·è¾“å…¥å¹´ã€æœˆã€æ—¥:\n");
 	scanf("%d %d %d",&data.Year,&data.Month,&data.Day);
-	printf("¾­¹ı¼ÆËã¿ÉÖª:\n%d/%dÈÕ,ÊÇ%dÄêµÄµÚ%dÌì\n",data.Month,data.Day,data.Year,DayCount(data));
+	printf("ç»è¿‡è®¡ç®—å¯çŸ¥:\n%d/%dæ—¥,æ˜¯%då¹´çš„ç¬¬%då¤©\n",data.Month,data.Day,data.Year,DayCount(data));
 
 	Back_M();
 }
@@ -45,9 +45,9 @@ void Fun3_PrintS()
 {
 	int i,j;
 	void Inputs(struct student stu[]);
-	printf("-------03.Ñ§ÉúµÄ³É¼¨Êı×éÊä³ö-------\n");
+	printf("-------03.å­¦ç”Ÿçš„æˆç»©æ•°ç»„è¾“å‡º-------\n");
 	Inputs(stu);
-	printf("\n±£´æµÄÑ§Éú³É¼¨Îª:\n");
+	printf("\nä¿å­˜çš„å­¦ç”Ÿæˆç»©ä¸º:\n");
 	printf("  N0.	Name	Chiness	  Math	English	  Phsical\n");
 	for(i=0;i<L;++i)
 	{
@@ -64,7 +64,7 @@ void Fun4_InputS()
 {
 	void Inputs(struct student stu[]);
 	void Prints(struct student stu[]);
-	printf("-------04.Ñ§ÉúµÄ³É¼¨Êı×éÊäÈë-------\n");
+	printf("-------04.å­¦ç”Ÿçš„æˆç»©æ•°ç»„è¾“å…¥-------\n");
 	Inputs(stu);
 	Prints(stu);
 	Back_M();
@@ -75,7 +75,7 @@ void Fun5_CountS()
 	void Countprin();
 	void CountSort();
 
-	printf("-------05.Ñ§Éú³É¼¨µÄÍ³¼Æ²Ù×÷-------\n");
+	printf("-------05.å­¦ç”Ÿæˆç»©çš„ç»Ÿè®¡æ“ä½œ-------\n");
 	//Countsave();
 	Countprin();
 	CountSort();
@@ -87,7 +87,7 @@ void Fun5_CountS()
 void Fun6_DeleNode()
 {
 	int i,h,count;
-	printf("-------06.Á´±íÊµÏÖ°´±àºÅÉ¾³ı-------\n");
+	printf("-------06.é“¾è¡¨å®ç°æŒ‰ç¼–å·åˆ é™¤-------\n");
 	for(i=1;i<=S;i++)
 	{
 		link[i].number=i;
@@ -98,13 +98,13 @@ void Fun6_DeleNode()
 	}
 	printf("\n");
 
-	printf("\n³õÊ¼»¯µÄ½Úµã±àºÅÎª:\n");
+	printf("\nåˆå§‹åŒ–çš„èŠ‚ç‚¹ç¼–å·ä¸º:\n");
 	for(i=1;i<=S;i++)
 		printf("%4d",link[i].number);
 
 	count=0;h=S;
 
-	printf("\nÒÀ´ÎÀë¿ªµÄ½Úµã±àºÅ:\n");
+	printf("\nä¾æ¬¡ç¦»å¼€çš„èŠ‚ç‚¹ç¼–å·:\n");
 
 	while(count<S-1)
 	{
@@ -120,7 +120,7 @@ void Fun6_DeleNode()
 		count++;
 	}
 
-	printf("\n×îÖÕÊ£ÏÂµÄ½Úµã±àºÅ:");
+	printf("\næœ€ç»ˆå‰©ä¸‹çš„èŠ‚ç‚¹ç¼–å·:");
 	for(i=1;i<=S;i++)
 	{
 		if(link[i].number)
@@ -134,8 +134,8 @@ void Fun7_NodeDele()
 	struct StudLink *p,*q,*r;
 	long NOD;
 	r=p=q=(struct StudLink *)malloc(LEN);
-	printf("-------07.¶¯Ì¬Á´±íµÄÉ¾³ıËã·¨-------\n");
-	printf("\nÇëÊäÈë½ÚµãĞÅÏ¢²¢ÒÔ0½áÊøÊäÈë:\n");
+	printf("-------07.åŠ¨æ€é“¾è¡¨çš„åˆ é™¤ç®—æ³•-------\n");
+	printf("\nè¯·è¾“å…¥èŠ‚ç‚¹ä¿¡æ¯å¹¶ä»¥0ç»“æŸè¾“å…¥:\n");
 	scanf("%ld %f",&p->num,&p->score);
 	while(p->num!=0)
 	{
@@ -146,7 +146,7 @@ void Fun7_NodeDele()
 	}
 	q->next=NULL;
 
-	printf("\nÔ­Ê¼µÄÁ´±íÎª:\n");
+	printf("\nåŸå§‹çš„é“¾è¡¨ä¸º:\n");
 	p=r;
 	if(p)
 	{
@@ -157,9 +157,9 @@ void Fun7_NodeDele()
 		}
 	}
 
-	printf("\nÇëÊäÈëÉ¾³ıµÄ½Úµã±àºÅ:");
+	printf("\nè¯·è¾“å…¥åˆ é™¤çš„èŠ‚ç‚¹ç¼–å·:");
 	scanf("%ld",&NOD);
-	printf("\nÉ¾³ı¸Ã½ÚµãºóµÄÁ´±íÎª:\n");
+	printf("\nåˆ é™¤è¯¥èŠ‚ç‚¹åçš„é“¾è¡¨ä¸º:\n");
 	p=r;
 	while(p)
 	{
@@ -180,8 +180,8 @@ void Fun8_NodeInse()
 {
 	struct StudLink *s,*r,*t,*l;
 	l=s=r=(struct StudLink *)malloc(LEN);
-	printf("-------08.¶¯Ì¬Á´±íµÄ²åÈëËã·¨-------\n");
-	printf("\nÇëÊäÈë½ÚµãĞÅÏ¢,ÒÔ0½áÊøÊäÈë:\n");
+	printf("-------08.åŠ¨æ€é“¾è¡¨çš„æ’å…¥ç®—æ³•-------\n");
+	printf("\nè¯·è¾“å…¥èŠ‚ç‚¹ä¿¡æ¯,ä»¥0ç»“æŸè¾“å…¥:\n");
 	scanf("%ld %f",&s->num,&s->score);
 	while(s->num!=0)
 	{
@@ -192,7 +192,7 @@ void Fun8_NodeInse()
 	}
 	r->next=NULL;
 
-	printf("\nÄúÊäÈëµÄÔ­Ê¼Êı¾İÎª:\n");
+	printf("\næ‚¨è¾“å…¥çš„åŸå§‹æ•°æ®ä¸º:\n");
 	r=l;
 	if(r)
 	{
@@ -203,7 +203,7 @@ void Fun8_NodeInse()
 		}
 	}
 
-	printf("\n\nÇëÊäÈëÒª²åÈëµÄ½Úµã:");
+	printf("\n\nè¯·è¾“å…¥è¦æ’å…¥çš„èŠ‚ç‚¹:");
 	t=(struct StudLink *)malloc(LEN);
 	scanf("%ld %f",&t->num,&t->score);
 
@@ -219,7 +219,7 @@ void Fun8_NodeInse()
 		r=r->next;
 	}
 
-	printf("\n²åÈëºóµÄÁ´±íÊı¾İÎª:\n");
+	printf("\næ’å…¥åçš„é“¾è¡¨æ•°æ®ä¸º:\n");
 	r=l;
 	while(r)
 	{
@@ -234,32 +234,32 @@ void Fun9_LinkOper()
 	struct StudLink *head,*Nadd;
 	long DelNum;
 
-	printf("-------09.Á´±í²Ù×÷--½¨É¾²å²é-------\n");
+	printf("-------09.é“¾è¡¨æ“ä½œ--å»ºåˆ æ’æŸ¥-------\n");
 	
-	/*´´½¨²¢Êä³ö*/
+	/*åˆ›å»ºå¹¶è¾“å‡º*/
 	head=Create();
 	Output(head);
 	
-	/*É¾³ı²¢Êä³ö*/
-	printf("\nÇëÊäÈëÉ¾³ı±àºÅ:");
+	/*åˆ é™¤å¹¶è¾“å‡º*/
+	printf("\nè¯·è¾“å…¥åˆ é™¤ç¼–å·:");
 	scanf("%ld",&DelNum);
 	while(DelNum!=0)
 	{
 		head=Delete(head,DelNum);
 		Output(head);
-		printf("\nÇëÊäÈëÉ¾³ı±àºÅ:");
+		printf("\nè¯·è¾“å…¥åˆ é™¤ç¼–å·:");
 		scanf("%ld",&DelNum);
 	}
 
-	/*²åÈë²¢Êä³ö*/
-	printf("\nÇëÊäÈë²åÈë½Úµã:");
+	/*æ’å…¥å¹¶è¾“å‡º*/
+	printf("\nè¯·è¾“å…¥æ’å…¥èŠ‚ç‚¹:");
 	Nadd=(struct StudLink *)malloc(LEN);
 	scanf("%ld %f",&Nadd->num,&Nadd->score);
 	while(Nadd->num!=0)
 	{
 		head=Insert(head,Nadd);
 		Output(head);
-		printf("\nÇëÊäÈë²åÈë½Úµã:");
+		printf("\nè¯·è¾“å…¥æ’å…¥èŠ‚ç‚¹:");
 		Nadd=(struct StudLink *)malloc(LEN);
 		scanf("%ld %f",&Nadd->num,&Nadd->score);
 	}
@@ -270,16 +270,16 @@ void Fun10_MergeNode()
 {
 	struct StudLink *A,*B,*C;
 	struct StudLink *Merge(struct StudLink *,struct StudLink *);
-	printf("-------10.Á´±íµÄÑ§ºÅÉıĞòºÏ²¢-------\n");
-	printf("\n½¨Á¢Á´±í A \n");
+	printf("-------10.é“¾è¡¨çš„å­¦å·å‡åºåˆå¹¶-------\n");
+	printf("\nå»ºç«‹é“¾è¡¨ A \n");
 	A=Create();
 	Output(A);
 
-	printf("\n½¨Á¢Á´±í B \n");
+	printf("\nå»ºç«‹é“¾è¡¨ B \n");
 	B=Create();
 	Output(B);
 
-	printf("\nºÏ²¢Á´±í C \n");
+	printf("\nåˆå¹¶é“¾è¡¨ C \n");
 	C=Merge(A,B);
 	Output(C);
 
@@ -291,23 +291,23 @@ void Fun11_DeleLink()
 	Studata *DeleteNode(Studata *,Studata *);
 	void PrintLink(Studata *);
 
-	printf("-------11.É¾È¥Á½Á´±íÖĞÖØ¸´µã-------\n");
+	printf("-------11.åˆ å»ä¸¤é“¾è¡¨ä¸­é‡å¤ç‚¹-------\n");
 
-	printf("\n½¨Á¢Á´±í A :\n");
+	printf("\nå»ºç«‹é“¾è¡¨ A :\n");
 	A=CreatLink();
 	PrintLink(A);
 
-	printf("\n½¨Á¢Á´±í B :\n");
+	printf("\nå»ºç«‹é“¾è¡¨ B :\n");
 	B=CreatLink();
 	PrintLink(B);
 
-	printf("\nÈ¥ÖØºóµÄÁ´±í A :\n");
+	printf("\nå»é‡åçš„é“¾è¡¨ A :\n");
 	C=DeleteNode(A,B);
 	PrintLink(C);
 	Back_M();
 }
 void Fun12_DeteMore()
 {
-	printf("-------12.°´ÄêÁäÉ¾³ıÁ´±í½Úµã-------\n");
+	printf("-------12.æŒ‰å¹´é¾„åˆ é™¤é“¾è¡¨èŠ‚ç‚¹-------\n");
 	Back_M();
 }

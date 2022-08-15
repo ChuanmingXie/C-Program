@@ -17,19 +17,19 @@ int DayCount(struct data Data)
 }
 
 char subject[4][10]={
-	{"ÓïÎÄ"},
-	{"ÊıÑ§"},
-	{"Ó¢Óï"},
-	{"ÌåÓı"}
+	{"è¯­æ–‡"},
+	{"æ•°å­¦"},
+	{"è‹±è¯­"},
+	{"ä½“è‚²"}
 };
 void Inputs(struct student stu[])
 {
 	int i,j;
-	printf("\nÇëÊäÈëÑ§ÉúµÄ³É¼¨:\n");
+	printf("\nè¯·è¾“å…¥å­¦ç”Ÿçš„æˆç»©:\n");
 	for(i=0;i<L;++i)
 	{
-		printf("Ñ§ºÅ:");scanf("%s",stu[i].num);
-		printf("ĞÕÃû:");scanf("%s",stu[i].name);
+		printf("å­¦å·:");scanf("%s",stu[i].num);
+		printf("å§“å:");scanf("%s",stu[i].name);
 		for(j=0;j<4;++j)
 		{
 			printf("%s:",subject[j]);
@@ -42,7 +42,7 @@ void Inputs(struct student stu[])
 void Prints(struct student stu[])
 {
 	int i,j;
-	printf("\n±£´æµÄÑ§Éú³É¼¨Îª:\n");
+	printf("\nä¿å­˜çš„å­¦ç”Ÿæˆç»©ä¸º:\n");
 	printf("  N0.	Name	Chiness	  Math	English	  Phsical\n");
 	for(i=0;i<L;++i)
 	{
@@ -63,7 +63,7 @@ void Countsave()
 
 	fp=fopen("10.5.txt","wb");
 
-	printf("\nÇëÊäÈëÑ§ÉúĞÅÏ¢:\n");
+	printf("\nè¯·è¾“å…¥å­¦ç”Ÿä¿¡æ¯:\n");
 	for(i=0;i<L;++i)
 	{
 		printf("NO. :");scanf("%s",stu[i].num);
@@ -76,7 +76,7 @@ void Countsave()
 			sum+=stu[i].score[j];
 		}
 		stu[i].aver=sum/4;
-		fwrite(&stu[i],sizeof(struct student),1,fp);/*±ØĞë·ÅÔÚÊäÈëÖ®ºó*/
+		fwrite(&stu[i],sizeof(struct student),1,fp);/*å¿…é¡»æ”¾åœ¨è¾“å…¥ä¹‹å*/
 		printf("\n");
 	}	
 	fclose(fp);
@@ -90,7 +90,7 @@ void Countprin()
 
 	fp=fopen("10.5.txt","r");
 
-	printf("\n\nÊä³öÑ§ÉúĞÅÏ¢ÈçÏÂ:\n");
+	printf("\n\nè¾“å‡ºå­¦ç”Ÿä¿¡æ¯å¦‚ä¸‹:\n");
 	printf("----------------------------------------------------------\n");
 	printf("  NO.    Name   Chiness    Math   English  Phsical   Aver\n");
 	printf("----------------------------------------------------------\n");
@@ -115,14 +115,14 @@ void Countprin()
 		}
 	}
 
-	printf("\n×î¸ß·ÖÑ§ÉúĞÅÏ¢:\n\n");
-	printf("×î¸ß·ÖÊıÑ§ÉúÊÇ:  %s	%s\n",stu[Maxi].num,stu[Maxi].name);
-	printf("ËÄÃÅ¿ÎµÄ³É¼¨Îª:");
+	printf("\næœ€é«˜åˆ†å­¦ç”Ÿä¿¡æ¯:\n\n");
+	printf("æœ€é«˜åˆ†æ•°å­¦ç”Ÿæ˜¯:  %s	%s\n",stu[Maxi].num,stu[Maxi].name);
+	printf("å››é—¨è¯¾çš„æˆç»©ä¸º:");
 	for(j=0;j<4;++j)
 	{
 		printf("%7.2f	",stu[Maxi].score[j]);
 	}
-	printf("\nËÄÃÅ¿ÎµÄÆ½¾ùÖµ:%7.2f\n",Max);
+	printf("\nå››é—¨è¯¾çš„å¹³å‡å€¼:%7.2f\n",Max);
 	fclose(fp);
 }
 
@@ -164,7 +164,7 @@ void CountSort()
 		aves[i]=aves[i]/L;
 	}
 
-	printf("\nÅÅĞòºóµÄÑ§Éú³É¼¨ÈçÏÂ:\n");
+	printf("\næ’åºåçš„å­¦ç”Ÿæˆç»©å¦‚ä¸‹:\n");
 	printf("----------------------------------------------------------\n");
 	printf("  NO.    Name   Chiness    Math   English  Phsical   Aver\n");
 	printf("----------------------------------------------------------\n");
@@ -192,10 +192,10 @@ struct StudLink *Create()
 {
 	struct StudLink *head,*s,*r;
 
-	printf("\nÇëÊäÈë½ÚµãÊı¾İ,ÒÔ0½áÊø:\n");
+	printf("\nè¯·è¾“å…¥èŠ‚ç‚¹æ•°æ®,ä»¥0ç»“æŸ:\n");
 
-	head=s=r=(struct StudLink *)malloc(LEN);//¹«ÓÃÄÚ´æ
-	scanf("%ld %f",&s->num,&s->score);		//²»´øÍ¶Í·½Úµã
+	head=s=r=(struct StudLink *)malloc(LEN);//å…¬ç”¨å†…å­˜
+	scanf("%ld %f",&s->num,&s->score);		//ä¸å¸¦æŠ•å¤´èŠ‚ç‚¹
 	while(s->num!=0)
 	{
 		r->next=s;
@@ -225,14 +225,14 @@ struct StudLink *Delete(struct StudLink * head,long num)
 				head=p->next;
 			else
 				s->next=p->next;
-			printf("\nÒÑÉ¾³ı:%4ld\n",num);
+			printf("\nå·²åˆ é™¤:%4ld\n",num);
 		}
 		else
-			printf("\nÎ´ÕÒµ½¸Ã½Úµã!\n");
+			printf("\næœªæ‰¾åˆ°è¯¥èŠ‚ç‚¹!\n");
 	}
 	else
 	{
-		printf("\nÕâÊÇÒ»Ö»¿Õ±í!\n");
+		printf("\nè¿™æ˜¯ä¸€åªç©ºè¡¨!\n");
 	}
 
 	return head;
@@ -276,7 +276,7 @@ struct StudLink *Insert(struct StudLink * head,struct StudLink *Nadd)
 void Output(struct StudLink *head)
 {
 	struct StudLink *p;
-	printf("\n²Ù×÷ºóµÄÁ´±íÎª:\n");
+	printf("\næ“ä½œåçš„é“¾è¡¨ä¸º:\n");
 	p=head;
 	if(head!=NULL)
 	{
@@ -331,10 +331,10 @@ Studata *CreatLink()
 
 	A=(Studata *)malloc(sizeof(Studata));
 	r=A;
-	printf("\nÇëÊäÈë½ÚµãĞÅÏ¢,ÒÔ0½áÊø:\n");
+	printf("\nè¯·è¾“å…¥èŠ‚ç‚¹ä¿¡æ¯,ä»¥0ç»“æŸ:\n");
 	s=(Studata *)malloc(sizeof(Studata));
 	scanf("%s %s",s->num,s->name);
-	while(strcmp(s->num,"0"))	//·µ»ØÖµÎª0,¼´²»ÏàµÈ
+	while(strcmp(s->num,"0"))	//è¿”å›å€¼ä¸º0,å³ä¸ç›¸ç­‰
 	{
 		r->next=s;
 		r=s;
@@ -350,7 +350,7 @@ Studata *DeleteNode(Studata *A,Studata *B)
 	p=A->next;
 	
 	if(p==NULL||B->next==NULL)
-		printf("\nÁ´±íÎª¿Õ!\n");
+		printf("\né“¾è¡¨ä¸ºç©º!\n");
 	else
 	{
 		while(p)
@@ -358,24 +358,24 @@ Studata *DeleteNode(Studata *A,Studata *B)
 			q=B->next;
 			
 			/* 
-			·¸ÁËÒ»¸öµÍ¼¶ÑÏÖØµÄ´íÎó!,×Ö·û´®µÄ±È½ÏÓÃstrcmp
+			çŠ¯äº†ä¸€ä¸ªä½çº§ä¸¥é‡çš„é”™è¯¯!,å­—ç¬¦ä¸²çš„æ¯”è¾ƒç”¨strcmp
 				while((q!=NULL)&&((p->num)!=(q->num)))
 			*/
 
 			while((q->next!=NULL)&&(strcmp(p->num,q->num)))
 			{
-				/*q->next!=NULL È¡²»µ½×îºóÒ»¸öqÖµ*/
+				/*q->next!=NULL å–ä¸åˆ°æœ€åä¸€ä¸ªqå€¼*/
 				q=q->next;
 				printf("\np:%s q:%s\n",p->num,q->num);
 			}
 			if(!(strcmp(p->num,q->num)))
 			{
-				printf("\nÕÒµ½%s\n",p->num);
+				printf("\næ‰¾åˆ°%s\n",p->num);
 				if(p==A->next)
 					r=p->next;
 				else
 				{
-					printf("\nÉ¾È¥%s\n",p->num);
+					printf("\nåˆ å»%s\n",p->num);
 					r->next=p->next;
 					p=p->next;
 					r=r->next;
@@ -383,14 +383,14 @@ Studata *DeleteNode(Studata *A,Studata *B)
 			}
 			else if(strcmp(p->num,q->num))
 			{
-				printf("\n¸Ã´Î½áÊø p:%s \n",p->num);
+				printf("\nè¯¥æ¬¡ç»“æŸ p:%s \n",p->num);
 				r=p;
 				p=p->next;
 			}
 		}
 	}
 
-	printf("\nÁ´±í A È¥ÖØ³É¹¦!\n");
+	printf("\né“¾è¡¨ A å»é‡æˆåŠŸ!\n");
 	
 	return A;
 }
@@ -398,7 +398,7 @@ void PrintLink(Studata *H)
 {
 	Studata *p;
 	p=H->next;
-	printf("\n²Ù×÷ºóµÄÁ´±íÎª:\n");
+	printf("\næ“ä½œåçš„é“¾è¡¨ä¸º:\n");
 
 	if(p)
 	{
